@@ -161,10 +161,13 @@
 ## Credits
 
 ### Content
+- Wireframes designed using [Figma](https://www.figma.com/)
 
 ### Media
 
 ### Color Scheme, Fonts & Icons
+- Social media icons sourced from [Font Awesome](https://fontawesome.com/)
+- Email icon sourced from [Icons8](https://icons8.com/)
 
 ### Extensions
 
