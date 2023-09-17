@@ -1,0 +1,14 @@
+/* Generic styles */
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    border-style: none;
+    box-sizing: border-box;
+    color: #6A6A6A;
+  }
+
+.flex {
+    display: flex;
+    width: 100%;
+}
