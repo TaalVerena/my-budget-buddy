@@ -30,3 +30,21 @@ header {
 footer {
     bottom: 0;
 }
+
+/* Logo & Contact Us*/
+.logo {
+    width: 40vw;
+    height: 20vw;
+}
+
+#logo-container, #contact-us {
+    margin: 25px 18px;
+}
+
+#contact-us {
+    font-size: 22px;
+    color: #5EAB95;
+    border: 3px solid #5EAB95;
+    border-radius: 15px;
+    padding: 7px;
+}
