@@ -12,3 +12,21 @@
     display: flex;
     width: 100%;
 }
+
+
+/* Header & footer */
+header, footer {
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    height: 115px;
+}
+
+header {
+    top: 0;
+}
+
+footer {
+    bottom: 0;
+}
