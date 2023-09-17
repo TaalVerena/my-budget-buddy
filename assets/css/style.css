@@ -15,20 +15,13 @@
 
 
 /* Header & footer */
-header, footer {
+header {
+    top: 0;
     justify-content: center;
     align-items: center;
     justify-content: space-around;
     position: fixed;
     height: 115px;
-}
-
-header {
-    top: 0;
-}
-
-footer {
-    bottom: 0;
 }
 
 /* Logo & Contact Us*/
@@ -47,4 +40,24 @@ footer {
     border: 3px solid #5EAB95;
     border-radius: 15px;
     padding: 7px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+}
+
+#footer-icon-list {
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    height: 115px;
+}
+
+.social-links {
+    list-style: none;
+}
+
+.social-links a {
+    font-size: 35px;
 }
