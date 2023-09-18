@@ -40,7 +40,7 @@ header {
     display: block;
 }
 
-/* Logo & Contact Us*/
+/* Logo & contact us*/
 .logo {
     width: 110px;
     height: 55px;
@@ -58,6 +58,7 @@ header {
     padding: 7px;
 }
 
+/* Footer */
 footer {
     position: fixed;
     bottom: 0;
