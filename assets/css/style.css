@@ -26,6 +26,13 @@ html {
     scroll-behavior: smooth;
 }
 
+h1 {
+    margin: 30px;
+    font-size: 43px;
+    line-height: 60px;
+    text-shadow: 6px 6px #F2D5D5;
+}
+
 /* Header */
 header {
     top: 0;
@@ -56,6 +63,13 @@ header {
     border: 3px solid #5EAB95;
     border-radius: 15px;
     padding: 7px;
+}
+
+/* Landing  page cover text*/
+#cover-text-p {
+    margin: 30px;
+    font-size: 22px;
+    line-height: 35px;
 }
 
 /* Footer */
