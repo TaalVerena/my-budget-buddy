@@ -21,6 +21,11 @@ body {
     background-attachment: fixed;
 }
 
+html {
+    scroll-padding-top: 115px;
+    scroll-behavior: smooth;
+}
+
 /* Header */
 header {
     top: 0;
