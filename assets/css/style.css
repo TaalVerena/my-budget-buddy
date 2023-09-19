@@ -8,11 +8,6 @@
     color: #6A6A6A;
 }
 
-.flex {
-    display: flex;
-    width: 100%;
-}
-
 body {
     padding: 115px 0;
     background: linear-gradient(to right, white 50%, #96D9C6 50%);
@@ -41,18 +36,37 @@ button {
     border-radius: 20px;
 }
 
-.button-container {
+.flex {
     display: flex;
+    width: 100%;
+}
+
+.flex-center {
+    display: flex;
+    width: 100%;
     justify-content: center;
+}
+
+.flex-space-evenly {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-space-around {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
 }
 
 /* Header */
 header {
     top: 0;
     left: 0;
-    justify-content: center;
-    align-items: center;
-    justify-content: space-around;
     position: fixed;
     height: 115px;
     background-color: white;
@@ -93,12 +107,6 @@ footer {
     height: 115px;
     background-color: white;
     z-index: 1;
-}
-
-#footer-icon-list {
-    justify-content: center;
-    align-items: center;
-    justify-content: space-around;
 }
 
 .social-links {
