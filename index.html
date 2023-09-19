@@ -11,7 +11,10 @@
 </head>
 
 <body>
+    <!-- Main content -->
     <main>
+
+        <!-- Header -->
         <header class="flex">
             <a href="index.html" aria-label="Budget Buddy logo; takes you to the Home Page" class="logo"
                 id="logo-container"><img src="assets/images/budget-buddy-logo.png" alt="logo" class="logo"
@@ -20,35 +23,103 @@
                 Us</a>
         </header>
 
+        <!-- Cover text -->
         <h1>My Budget<br>Buddy</h1>
         <p id="cover-text-p"><em>Your Chilled Budget Tracker. <br> Here to Make Budgeting <br>a Breeze!</em></p>
-        
+
         <div class="button-container">
-            <button aria-label="Starts the budgeting process.">Let's Go!</button>
+            <button aria-label="Starts the budgeting process." id="go-button">Let's Go!</button>
         </div>
 
-        <dialog>
+        <!-- Income & budget modal -->
+        <dialog id="income-budget-modal">
+            <h1>My Budget Buddy</h1>
+
+            <!-- Income -->
+            <div>
+                <h2>My Income</h2>
+
+                <!-- Pay period -->
+                <div>
+                    <label for="pay-period">Pay Period</label>
+                    <select name="pay_period" id="pay-period">
+                        <option value="weekly">Weekly</option>
+                        <option value="fortnightly">Fortnightly</option>
+                        <option value="monthly">Monthly</option>
+                    </select>
+                </div>
+
+                <!-- Currency -->
+                <div>
+                    <label for="currency">Currency</label>
+                    <select name="currency" id="currency">
+                        <option value="€">€</option>
+                        <option value="£">£</option>
+                        <option value="$">$</option>
+                    </select>
+                </div>
+
+                <!-- Salary -->
+                <div>
+                    <label for="salary">Salary</label>
+                    <span class="currency-selected"></span>
+                    <input type="number" id="salary" name="salary" placeholder="100" required>
+                </div>
+
+                <!-- Commission -->
+                <div>
+                    <label for="commission">Commission</label>
+                    <span class="currency-selected"></span>
+                    <input type="number" id="commission" name="commission" placeholder="100" required>
+                </div>
+
+                <!-- Overtime -->
+                <div>
+                    <label for="overtime">Overtime</label>
+                    <span class="currency-selected"></span>
+                    <input type="number" id="overtime" name="overtime" placeholder="100" required>
+                </div>
+
+                <!-- Bonus -->
+                <div>
+                    <label for="bonus">Bonus</label>
+                    <span class="currency-selected"></span>
+                    <input type="number" id="bonus" name="bonus" placeholder="100" required>
+                </div>
+
+                <!-- Other -->
+                <div>
+                    <label for="other-income">Other</label>
+                    <span class="currency-selected"></span>
+                    <input type="number" id="other-income" name="other_income" placeholder="100" required>
+                </div>
+            </div>
+        </dialog>
+
+        <!-- Spends modal -->
+        <dialog id="spends-modal">
 
         </dialog>
 
-        <dialog>
+        <!-- Results modal -->
+        <dialog id="results-modal">
 
         </dialog>
 
-        <dialog>
-
-        </dialog>
-
+        <!-- Footer -->
         <footer class="flex">
             <ul id="footer-icon-list" class="flex">
-                <li class="social-links"><a href="https://www.instagram.com/" aria-label="Find us on Instagram; opens in a new tab."
-                        target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <li class="social-links"><a href="https://www.instagram.com/"
+                        aria-label="Find us on Instagram; opens in a new tab." target="_blank"><i
+                            class="fa-brands fa-instagram"></i></a>
                 </li>
-                <li class="social-links"><a href="https://www.facebook.com/" aria-label="Find us on Facebook; opens in a new tab."
-                        target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                <li class="social-links"><a href="https://www.facebook.com/"
+                        aria-label="Find us on Facebook; opens in a new tab." target="_blank"><i
+                            class="fa-brands fa-facebook-f"></i></a>
                 </li>
-                <li class="social-links"><a href="https://twitter.com/" aria-label="Find us on Twitter; opens in a new tab."
-                        target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                <li class="social-links"><a href="https://twitter.com/"
+                        aria-label="Find us on Twitter; opens in a new tab." target="_blank"><i
+                            class="fa-brands fa-x-twitter"></i></a>
                 </li>
             </ul>
         </footer>
@@ -58,4 +129,3 @@
 </body>
 
 </html>
-
