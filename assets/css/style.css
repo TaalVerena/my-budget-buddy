@@ -113,8 +113,15 @@ header {
     border-radius: 20px;
 }
 
+.modal-body {
+    width: 280px;
+    border-radius: 20px;
+    padding: 10px;
+}
+
 .background-mint {	
-    background-color: #B0F8E3;	
+    background-color: #B0F8E3;
+    border: 3px solid #5EAB95;
 }
 
 /* Footer */
