@@ -152,6 +152,11 @@ header {
     border: 3px solid #5EAB95;
 }
 
+.background-lavendar {  
+    background-color: #E6E6FA;
+    border: 3px solid #A6A6F9;
+}
+
 /* Footer */
 footer {
     position: fixed;
