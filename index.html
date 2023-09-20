@@ -36,15 +36,15 @@
             <h1>My Budget Buddy</h1>
 
             <!-- Income -->
-            <section>
-                <div class="flex-center">
+            <section class="flex-center-column">
+                <div>
                     <h2 class="background-mint modal-title flex-center">My Income</h2>
                 </div>
                 <div class="background-mint modal-body">
                     <!-- Pay period -->
                     <div>
-                        <label for="pay-period">Pay Period</label>
-                        <select name="pay_period" id="pay-period">
+                        <label for="pay-period" class="modal-label">Pay Period</label>
+                        <select name="pay_period" id="pay-period" class="modal-input">
                             <option value="weekly">Weekly</option>
                             <option value="fortnightly">Fortnightly</option>
                             <option value="monthly">Monthly</option>
@@ -53,8 +53,8 @@
 
                     <!-- Currency -->
                     <div>
-                        <label for="currency">Currency</label>
-                        <select name="currency" id="currency">
+                        <label for="currency" class="modal-label">Currency</label>
+                        <select name="currency" id="currency" class="modal-input">
                             <option value="€">€</option>
                             <option value="£">£</option>
                             <option value="$">$</option>
@@ -63,44 +63,44 @@
 
                     <!-- Salary -->
                     <div>
-                        <label for="salary">Salary</label>
+                        <label for="salary" class="modal-label">Salary</label>
                         <span class="currency-selected"></span>
-                        <input type="number" id="salary" name="salary" placeholder="100" required>
+                        <input type="number" id="salary" name="salary" placeholder="100" required class="modal-input">
                     </div>
 
                     <!-- Commission -->
                     <div>
-                        <label for="commission">Commission</label>
+                        <label for="commission" class="modal-label">Commission</label>
                         <span class="currency-selected"></span>
-                        <input type="number" id="commission" name="commission" placeholder="100" required>
+                        <input type="number" id="commission" name="commission" placeholder="100" required class="modal-input">
                     </div>
 
                     <!-- Overtime -->
                     <div>
-                        <label for="overtime">Overtime</label>
+                        <label for="overtime" class="modal-label">Overtime</label>
                         <span class="currency-selected"></span>
-                        <input type="number" id="overtime" name="overtime" placeholder="100" required>
+                        <input type="number" id="overtime" name="overtime" placeholder="100" required class="modal-input">
                     </div>
 
                     <!-- Bonus -->
                     <div>
-                        <label for="bonus">Bonus</label>
+                        <label for="bonus" class="modal-label">Bonus</label>
                         <span class="currency-selected"></span>
-                        <input type="number" id="bonus" name="bonus" placeholder="100" required>
+                        <input type="number" id="bonus" name="bonus" placeholder="100" required class="modal-input">
                     </div>
 
                     <!-- Other -->
                     <div>
-                        <label for="other-income">Other</label>
+                        <label for="other-income" class="modal-label">Other</label>
                         <span class="currency-selected"></span>
-                        <input type="number" id="other-income" name="other_income" placeholder="100" required>
+                        <input type="number" id="other-income" name="other_income" placeholder="100" required class="modal-input">
                     </div>
                 </div>
             </section>
 
             <!-- Budget -->
-            <section>
-                <div class="flex-center">
+            <section class="flex-center-column">
+                <div>
                     <h2 class="background-mint modal-title flex-center">My Budget</h2>
                 </div>
                 <div class="background-mint modal-body">
