@@ -32,8 +32,9 @@ h1 {
 button {
     font-size: 25px;
     padding: 10px 0;
-    margin: 2.5px;
+    margin: 2.5px 2.5px 15px 2.5px;
     background-color: #F2D5D5;
+    text-decoration: underline 3px #F4B5B5;
     border-radius: 20px;
     width: 135px;
 }
