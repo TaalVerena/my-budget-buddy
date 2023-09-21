@@ -9,6 +9,8 @@ let resultsBackButton = document.getElementById('results-back-button');
 
 let payPeriodDropdown = document.getElementById('pay-period');
 
+let currency = document.getElementById('currency');
+
 // Display income & budget modal
 document.addEventListener('DOMContentLoaded', function () {
     let goButton = document.getElementById('go-button');
@@ -81,5 +83,15 @@ payPeriodDropdown.addEventListener('change', function () {
         budgetTitle.textContent = 'My Monthly Budget';
         spendsTitle.textContent = 'My Monthly Spends';
         resultsTitle.textContent = 'My Monthly Results';
+    }
+});
+
+// Update currency spans based on currency selected
+currency.addEventListener('change', function () {
+    let currencySpans = document.getElementsByClassName('currency-selected');
+    let selectedCurrency = currency.value;
+
+    for (let i = 0; i < currencySpans.length; i++) {
+        currencySpans[i].innerHTML = selectedCurrency;
     }
 });
