@@ -22,11 +22,12 @@ html {
 }
 
 /* Generic styles */
-h1 {
+h1, h2 {
     margin: 30px;
     font-size: 43px;
     line-height: 60px;
     text-shadow: 6px 6px #F2D5D5;
+    text-align: center;
 }
 
 button {
