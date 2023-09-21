@@ -4,6 +4,8 @@ let incomeBudgetNextButton = document.getElementById('income-budget-next-button'
 let spendsModal = document.getElementById('spends-modal');
 let spendsBackButton = document.getElementById('spends-back-button');
 let spendsNextButton = document.getElementById('spends-next-button');
+let resultsModal = document.getElementById('results-modal');
+let resultsBackButton = document.getElementById('results-back-button');
 
 // Display income & budget modal
 document.addEventListener('DOMContentLoaded', function (){
