@@ -1,11 +1,31 @@
-// Income & budget modal
-let goButton = document.getElementById('go-button');
+let incomeBudgetModal = document.getElementById('income-budget-modal');
+let incomeBudgetBackButton = document.getElementById('income-budget-back-button');
+let incomeBudgetNextButton = document.getElementById('income-budget-next-button');
 
-goButton.addEventListener('click', function () {
-    let incomeBudgetModal = document.getElementById('income-budget-modal');
-    displayModal(incomeBudgetModal);
+// Display income & budget modal
+document.addEventListener('DOMContentLoaded', function (){
+    let goButton = document.getElementById('go-button');
+
+    goButton.addEventListener('click', function (){
+        displayModal(incomeBudgetModal);
+    });
+})
+
+// Close income & budget modal
+incomeBudgetBackButton.addEventListener('click', function (){
+    closeModal(incomeBudgetModal);
 });
 
-function displayModal(modalName) {
+/**
+ * Shows / displays the model passed as the parameter
+ */
+function displayModal(modalName){
     modalName.showModal();
+}
+
+/**
+ * Closes the model passed as the parameter
+ */
+function closeModal(modalName){
+    modalName.close();
 }
