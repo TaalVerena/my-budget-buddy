@@ -36,6 +36,11 @@ spendsNextButton.addEventListener('click', function(){
     displayModal(resultsModal);
 })
 
+// Close results modal
+resultsBackButton.addEventListener('click', function (){
+    closeModal(resultsModal);
+});
+
 /**
  * Shows / displays the model passed as the parameter
  */
