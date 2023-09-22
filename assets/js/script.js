@@ -27,10 +27,29 @@ document.getElementById('income-budget-back-button').addEventListener('click', f
     closeModal(document.getElementById('income-budget-modal'));
 });
 
-// Display spends modal
+// Check income vs. budget & display spends modal
 document.getElementById('income-budget-next-button').addEventListener('click', function () {
+    let incomeInputs = document.getElementsByClassName('income-input');
+    let totalIncome = 0;
+
+    for (let incomeInput of incomeInputs) {
+        totalIncome += parseFloat(incomeInput.value);
+    };
+
+    let budgetInputs = document.getElementsByClassName('budget-input');
+    let totalBudget = 0;
+
+    for (let budgetInput of budgetInputs) {
+        totalBudget += parseFloat(budgetInput.value);
+    };
+
+    console.log(totalIncome);
+    console.log(totalBudget);
+    
     displayModal(document.getElementById('spends-modal'));
 });
+
+    
 
 // Close spends modal
 document.getElementById('spends-back-button').addEventListener('click', function () {
