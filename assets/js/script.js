@@ -77,9 +77,28 @@ document.getElementById('spends-back-button').addEventListener('click', function
     closeModal(document.getElementById('spends-modal'));
 });
 
-// Display results modal
-document.getElementById('spends-next-button').addEventListener('click', function () {
-    displayModal(document.getElementById('results-modal'));
+// Check spends inputs & display results modal
+document.getElementById('spends-next-button').addEventListener('click', function (event) {
+    event.preventDefault();
+
+    let spendsInputs = document.getElementsByClassName('spends-input');
+    let allSpendsInputsValid = true;
+
+    // Check spends inputs
+    for (let spendsInput of spendsInputs) {
+        const spendsValue = parseFloat(spendsInput.value);
+
+        // Check if the input is a valid number and greater than or equal to 0
+        if (isNaN(spendsValue) || spendsValue < 0) {
+            alert('Please enter a valid positive number for spends.');
+            allSpendsInputsValid = false;
+            break; // Stop processing if the input is invalid 
+        }
+    }
+
+    if (allSpendsInputsValid) {
+        displayModal(document.getElementById('results-modal'));
+    }
 });
 
 // Close results modal
