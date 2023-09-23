@@ -28,28 +28,49 @@ document.getElementById('income-budget-back-button').addEventListener('click', f
 });
 
 // Check income vs. budget & display spends modal
-document.getElementById('income-budget-next-button').addEventListener('click', function () {
+document.getElementById('income-budget-next-button').addEventListener('click', function (event) {
+    event.preventDefault();
+
     let incomeInputs = document.getElementsByClassName('income-input');
     let totalIncome = 0;
 
+    // Check income inputs
     for (let incomeInput of incomeInputs) {
-        totalIncome += parseFloat(incomeInput.value);
-    };
+        const incomeValue = parseFloat(incomeInput.value);
+
+        // Check if the input is a valid number and greater than or equal to 0
+        if (isNaN(incomeValue) || incomeValue < 0) {
+            alert('Please enter a valid positive number for income.');
+            return; // Stop processing if the input is invalid 
+        }
+
+        totalIncome += incomeValue;
+    }
 
     let budgetInputs = document.getElementsByClassName('budget-input');
     let totalBudget = 0;
 
+    // Check budget inputs
     for (let budgetInput of budgetInputs) {
-        totalBudget += parseFloat(budgetInput.value);
-    };
+        const budgetValue = parseFloat(budgetInput.value);
 
-    console.log(totalIncome);
-    console.log(totalBudget);
-    
-    displayModal(document.getElementById('spends-modal'));
+        // Check if the input is a valid number and greater than or equal to 0
+        if (isNaN(budgetValue) || budgetValue < 0) {
+            alert('Please enter a valid positive number for the budget.');
+            return; // Stop processing if the input is invalid 
+        }
+
+        totalBudget += budgetValue;
+    }
+
+    // Check if the budget is greater than the income
+    if (totalBudget > totalIncome) {
+        alert('Your budget exceeds your income. Please adjust your budget.');
+    } else {
+        // If the income is larger or equal, open the next modal
+        displayModal(document.getElementById('spends-modal'));
+    }
 });
-
-    
 
 // Close spends modal
 document.getElementById('spends-back-button').addEventListener('click', function () {
