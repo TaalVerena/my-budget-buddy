@@ -138,6 +138,16 @@ document.getElementById('spends-next-button').addEventListener('click', function
     }
 
     if (allSpendsInputsValid) {
+        function showResults() {
+            let budgetInputs = document.getElementsByClassName('budget-input');
+            let spendsInputs = document.getElementsByClassName('spends-input');
+            let results = document.getElementsByClassName('results');
+
+            for (let i = 0; i < results.length; i++) {
+                results[i].innerHTML = budgetInputs[i].value - spendsInputs[i].value;
+            }
+        }
+        showResults();
         displayModal(document.getElementById('results-modal'));
     }
 });
