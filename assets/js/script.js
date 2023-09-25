@@ -82,7 +82,7 @@ document.getElementById('income-budget-next-button').addEventListener('click', f
 
         // Check if the input is a valid number and greater than or equal to 0
         if (isNaN(incomeValue) || incomeValue < 0) {
-            alert('Please enter a valid positive number for income.');
+            alert('Please enter a valid positive number equal to or greater than 0 for each income category.');
             return; // Stop processing if the input is invalid 
         }
 
@@ -98,7 +98,7 @@ document.getElementById('income-budget-next-button').addEventListener('click', f
 
         // Check if the input is a valid number and greater than or equal to 0
         if (isNaN(budgetValue) || budgetValue < 0) {
-            alert('Please enter a valid positive number for the budget.');
+            alert('Please enter a valid positive number equal to or greater than 0 for each budget category.');
             return; // Stop processing if the input is invalid 
         }
 
@@ -109,7 +109,7 @@ document.getElementById('income-budget-next-button').addEventListener('click', f
     if (totalBudget > totalIncome) {
         alert('Your budget exceeds your income. Please adjust your budget.');
     } else {
-        // If the income is larger or equal, open the next modal
+        // If the income is larger or equal, open the spends modal
         displayModal(document.getElementById('spends-modal'));
     }
 });
@@ -133,7 +133,7 @@ document.getElementById('spends-next-button').addEventListener('click', function
 
         // Check if the input is a valid number and greater than or equal to 0
         if (isNaN(spendsValue) || spendsValue < 0) {
-            alert('Please enter a valid positive number for spends.');
+            alert('Please enter a valid positive number equal to or greater than 0 for each spends category.');
             allSpendsInputsValid = false;
             break; // Stop processing if the input is invalid 
         }
@@ -144,6 +144,9 @@ document.getElementById('spends-next-button').addEventListener('click', function
     if (allSpendsInputsValid) {
         let totalBudget = 0;
 
+        /**
+         * Displays the result for each budget vs spend input & calculates spend %
+         */
         function showResults(totalIncome) {
             let budgetInputs = document.getElementsByClassName('budget-input');
             let results = document.getElementsByClassName('results');
@@ -153,13 +156,13 @@ document.getElementById('spends-next-button').addEventListener('click', function
                 totalBudget += parseFloat(budgetInputs[i].value);
                 results[i].innerHTML = budgetInputs[i].value - spendsInputs[i].value;
 
-                // Calculate spend percentage for each category
+                // Calculate spend percentage for each category in relation to income
                 const spendPercentage = (parseFloat(spendsInputs[i].value) / parseFloat(totalIncome)) * 100;
                 spendPercentages.push(spendPercentage);
                 console.log(spendPercentage);
             }
 
-            // Call the function to update the pie chart
+            // Call the function to update the bar graph
             updatePieChart(spendPercentages);
         }
         showResults(totalIncome);
@@ -168,7 +171,7 @@ document.getElementById('spends-next-button').addEventListener('click', function
 });
 
 /**
- * Updates the results pie chart
+ * Updates the results bar graph
  */
 function updatePieChart(spendPercentages) {
     var categories = ['Rent / Mortgage', 'Transport / Vehicle', 'Food', 'Utilities', 'Loan Repayments', 'Savings', 'Other'];
