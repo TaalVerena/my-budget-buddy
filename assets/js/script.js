@@ -163,11 +163,14 @@ document.getElementById('spends-next-button').addEventListener('click', function
 
                 if (parseFloat(results[i].innerHTML) === 0) {
                     overOrUnder[i].innerHTML = "On Track";
+                    overOrUnder[i].style.color = '#738CBF';
                 } else if (parseFloat(results[i].innerHTML) > 0) {
                     overOrUnder[i].innerHTML = "Under Budget";
+                    overOrUnder[i].style.color = 'green';
                 } else {
                     results[i].innerHTML *= -1;
                     overOrUnder[i].innerHTML = "Over Budget";
+                    overOrUnder[i].style.color = 'red';
                 }
 
                 // Calculate spend percentage for each category in relation to income
