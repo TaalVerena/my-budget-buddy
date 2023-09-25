@@ -1,3 +1,5 @@
+let totalIncome = 0;
+
 // Display income & budget modal
 document.addEventListener('DOMContentLoaded', function () {
     const goButton = document.getElementById('go-button');
@@ -73,7 +75,6 @@ document.getElementById('income-budget-next-button').addEventListener('click', f
     event.preventDefault();
 
     let incomeInputs = document.getElementsByClassName('income-input');
-    let totalIncome = 0;
 
     // Check income inputs
     for (let incomeInput of incomeInputs) {
@@ -124,6 +125,7 @@ document.getElementById('spends-next-button').addEventListener('click', function
 
     let spendsInputs = document.getElementsByClassName('spends-input');
     let allSpendsInputsValid = true;
+    let totalSpends = 0;
 
     // Check spends inputs
     for (let spendsInput of spendsInputs) {
@@ -135,22 +137,72 @@ document.getElementById('spends-next-button').addEventListener('click', function
             allSpendsInputsValid = false;
             break; // Stop processing if the input is invalid 
         }
+
+        totalSpends += spendsValue;
     }
 
     if (allSpendsInputsValid) {
-        function showResults() {
+        let totalBudget = 0;
+
+        function showResults(totalIncome) {
             let budgetInputs = document.getElementsByClassName('budget-input');
-            let spendsInputs = document.getElementsByClassName('spends-input');
             let results = document.getElementsByClassName('results');
+            let spendPercentages = [];
 
             for (let i = 0; i < results.length; i++) {
+                totalBudget += parseFloat(budgetInputs[i].value);
                 results[i].innerHTML = budgetInputs[i].value - spendsInputs[i].value;
+
+                // Calculate spend percentage for each category
+                const spendPercentage = (parseFloat(spendsInputs[i].value) / parseFloat(totalIncome)) * 100;
+                spendPercentages.push(spendPercentage);
+                console.log(spendPercentage);
             }
+
+            // Call the function to update the pie chart
+            updatePieChart(spendPercentages);
         }
-        showResults();
+        showResults(totalIncome);
         displayModal(document.getElementById('results-modal'));
     }
 });
+
+/**
+ * Updates the results pie chart
+ */
+function updatePieChart(spendPercentages) {
+    var categories = ['Rent / Mortgage', 'Transport / Vehicle', 'Food', 'Utilities', 'Loan Repayments', 'Savings', 'Other'];
+    var barColors = [
+        "#BE9FE1",
+        "#C9B6E4",
+        "#E1CCEC",
+        "#CBEDD5",
+        "#97DECE",
+        "#62B6B7",
+        "#439A97"
+    ];
+
+    new Chart("results-chart", {
+        type: "pie",
+        data: {
+            labels: categories,
+            datasets: [{
+                backgroundColor: barColors,
+                data: spendPercentages
+            }]
+        },
+        options: {
+            maintainAspectRatio: false,
+            responsive: true,
+            width: 300,
+            height: 400,
+            title: {
+                display: true,
+                text: "My Spends Results"
+            }
+        }
+    });
+}
 
 // Close results modal
 document.getElementById('results-back-button').addEventListener('click', function () {
