@@ -182,8 +182,8 @@ function updatePieChart(spendPercentages) {
         "#439A97"
     ];
 
-    new Chart("results-chart", {
-        type: "pie",
+    new Chart("results-graph", {
+        type: "bar",
         data: {
             labels: categories,
             datasets: [{
@@ -192,13 +192,14 @@ function updatePieChart(spendPercentages) {
             }]
         },
         options: {
+            legend: {display: false},
             maintainAspectRatio: false,
             responsive: true,
             width: 300,
             height: 400,
             title: {
                 display: true,
-                text: "My Spends Results"
+                text: "My Spends % Per Category"
             }
         }
     });
