@@ -150,11 +150,21 @@ document.getElementById('spends-next-button').addEventListener('click', function
         function showResults(totalIncome) {
             let budgetInputs = document.getElementsByClassName('budget-input');
             let results = document.getElementsByClassName('results');
+            let overOrUnder = document.getElementsByClassName('over-or-under');
             let spendPercentages = [];
 
             for (let i = 0; i < results.length; i++) {
                 totalBudget += parseFloat(budgetInputs[i].value);
-                results[i].innerHTML = budgetInputs[i].value - spendsInputs[i].value;
+                results[i].innerHTML = parseFloat(budgetInputs[i].value) - parseFloat(spendsInputs[i].value);
+
+                if (parseFloat(results[i].innerHTML) === 0) {
+                    overOrUnder[i].innerHTML = "On Track";
+                } else if (parseFloat(results[i].innerHTML) > 0) {
+                    overOrUnder[i].innerHTML = "Under Budget";
+                } else {
+                    results[i].innerHTML *= -1;
+                    overOrUnder[i].innerHTML = "Over Budget";
+                }
 
                 // Calculate spend percentage for each category in relation to income
                 const spendPercentage = (parseFloat(spendsInputs[i].value) / parseFloat(totalIncome)) * 100;
