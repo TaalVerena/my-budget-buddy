@@ -104,7 +104,7 @@ header {
     padding: 7px;
 }
 
-/* Landing  page cover text*/
+/* Landing page cover text*/
 #cover-text-p {
     margin: 30px;
     font-size: 22px;
@@ -173,4 +173,9 @@ footer {
 
 .social-links a {
     font-size: 35px;
+}
+
+/* Results graph */
+canvas {
+    margin-bottom: 30px;
 }
