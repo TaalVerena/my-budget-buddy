@@ -142,6 +142,9 @@ document.getElementById('spends-next-button').addEventListener('click', function
     }
 
     if (allSpendsInputsValid) {
+        let savings = document.getElementById('savings');
+        let savingsCalculation = parseFloat(totalIncome) - parseFloat(totalSpends);
+        savings.innerHTML = parseFloat(savingsCalculation);
         let totalBudget = 0;
 
         /**
@@ -151,6 +154,7 @@ document.getElementById('spends-next-button').addEventListener('click', function
             let budgetInputs = document.getElementsByClassName('budget-input');
             let results = document.getElementsByClassName('results');
             let overOrUnder = document.getElementsByClassName('over-or-under');
+
             let spendPercentages = [];
 
             for (let i = 0; i < results.length; i++) {
@@ -169,7 +173,6 @@ document.getElementById('spends-next-button').addEventListener('click', function
                 // Calculate spend percentage for each category in relation to income
                 const spendPercentage = (parseFloat(spendsInputs[i].value) / parseFloat(totalIncome)) * 100;
                 spendPercentages.push(spendPercentage);
-                console.log(spendPercentage);
             }
 
             // Call the function to update the bar graph
@@ -184,7 +187,7 @@ document.getElementById('spends-next-button').addEventListener('click', function
  * Updates the results bar graph
  */
 function updatePieChart(spendPercentages) {
-    var categories = ['Rent / Mortgage', 'Transport / Vehicle', 'Food', 'Utilities', 'Loan Repayments', 'Savings', 'Other'];
+    var categories = ['Rent / Mortgage', 'Transport / Vehicle', 'Food', 'Utilities', 'Loan Repayments', 'Other'];
     var barColors = [
         "#BE9FE1",
         "#C9B6E4",

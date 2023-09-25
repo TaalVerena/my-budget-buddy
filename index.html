@@ -157,14 +157,6 @@
                             name="loan_repayments_budget" placeholder="100" required>
                     </div>
 
-                    <!-- Savings budget -->
-                    <div>
-                        <label for="savings-budget">Savings</label>
-                        <span class="currency-selected">€</span>
-                        <input type="number" id="savings-budget" class="budget-input savings-input"
-                            name="savings_budget" placeholder="100" required>
-                    </div>
-
                     <!-- Other budget -->
                     <div>
                         <label for="other-budget">Other</label>
@@ -234,14 +226,6 @@
                             name="loan_repayments_spends" placeholder="100" required>
                     </div>
 
-                    <!-- Savings spends -->
-                    <div>
-                        <label for="savings-spends">Savings</label>
-                        <span class="currency-selected">€</span>
-                        <input type="number" id="savings-spends" class="spends-input savings-input"
-                            name="savings_spends" placeholder="100" required>
-                    </div>
-
                     <!-- Other spends -->
                     <div>
                         <label for="other-spends">Other</label>
@@ -270,6 +254,7 @@
                 <div>
                     <h3 class="background-lavendar modal-title flex-center" id="results-title">My Weekly Results</h3>
                 </div>
+
                 <!-- Results for each category -->
                 <div class="background-lavendar modal-body">
                     <!-- Rent / mortgage results -->
@@ -316,20 +301,19 @@
                         <span class="over-or-under"></span>
                     </div>
 
-                    <!-- Savings results -->
-                    <div>
-                        <span>Savings</span>
-                        <span class="currency-selected">€</span>
-                        <span class="results"></span>
-                        <span class="over-or-under"></span>
-                    </div>
-
                     <!-- Other results -->
                     <div>
                         <span>Other</span>
                         <span class="currency-selected">€</span>
                         <span class="results"></span>
                         <span class="over-or-under"></span>
+                    </div>
+
+                    <!-- Savings -->
+                    <div>
+                        <span><strong>Savings: </strong></span>
+                        <span class="currency-selected">€</span>
+                        <span id="savings"></span>
                     </div>
                 </div>
 
