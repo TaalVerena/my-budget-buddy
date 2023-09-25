@@ -192,14 +192,27 @@ function updatePieChart(spendPercentages) {
             }]
         },
         options: {
-            legend: {display: false},
+            legend: { display: false },
             maintainAspectRatio: false,
             responsive: true,
             width: 300,
-            height: 400,
+            height: 1000,
             title: {
                 display: true,
-                text: "My Spends % Per Category"
+                text: "My Spends % Per Category",
+                fontSize: 16
+            },
+            scales: {
+                xAxes: [{
+                    ticks: {
+                        fontSize: 14
+                    }
+                }],
+                yAxes: [{
+                    ticks: {
+                        fontSize: 16
+                    }
+                }]
             }
         }
     });
