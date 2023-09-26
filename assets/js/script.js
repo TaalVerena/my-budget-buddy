@@ -142,9 +142,9 @@ document.getElementById('spends-next-button').addEventListener('click', function
     }
 
     if (allSpendsInputsValid) {
-        let savings = document.getElementById('savings');
+        let totalSavings = document.getElementById('total-savings');
         let savingsCalculation = parseFloat(totalIncome) - parseFloat(totalSpends);
-        savings.innerHTML = parseFloat(savingsCalculation);
+        totalSavings.innerHTML = parseFloat(savingsCalculation);
         let totalBudget = 0;
 
         /**

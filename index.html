@@ -249,10 +249,41 @@
                 <h2>My Budget<br>Buddy</h2>
             </div>
 
-            <!-- Results -->
+            <!-- Results for each category-->
             <section class="flex-center-column">
                 <div>
                     <h3 class="background-lavendar modal-title flex-center" id="results-title">My Weekly Results</h3>
+                </div>
+
+                <!-- Totals -->
+                <div class="background-lavendar modal-body">
+                    <!-- Total income -->
+                    <div id="total-income-container">
+                        <span><strong>Total Income: </strong></span>
+                        <span class="currency-selected">€</span>
+                        <span id="total-income"></span>
+                    </div>
+
+                    <!-- Total budget -->
+                    <div id="total-budget-container">
+                        <span><strong>Total Budget: </strong></span>
+                        <span class="currency-selected">€</span>
+                        <span id="total-budget"></span>
+                    </div>
+
+                    <!-- Total spends -->
+                    <div id="total-spends-container">
+                        <span><strong>Total Spends: </strong></span>
+                        <span class="currency-selected">€</span>
+                        <span id="total-spends"></span>
+                    </div>
+
+                    <!-- Total savings -->
+                    <div id="savings-container">
+                        <span><strong>Total Savings: </strong></span>
+                        <span class="currency-selected">€</span>
+                        <span id="total-savings"></span>
+                    </div>
                 </div>
 
                 <!-- Results for each category -->
@@ -307,13 +338,6 @@
                         <span class="currency-selected">€</span>
                         <span class="results"></span>
                         <span class="over-or-under"></span>
-                    </div>
-
-                    <!-- Savings -->
-                    <div>
-                        <span><strong>Savings: </strong></span>
-                        <span class="currency-selected">€</span>
-                        <span id="savings"></span>
                     </div>
                 </div>
 
