@@ -1,4 +1,6 @@
 let totalIncome = 0;
+let totalBudget = 0;
+let totalSpends = 0;
 
 // Display income & budget modal
 document.addEventListener('DOMContentLoaded', function () {
@@ -89,6 +91,8 @@ document.getElementById('income-budget-next-button').addEventListener('click', f
         totalIncome += incomeValue;
     }
 
+    document.getElementById('total-income').textContent = totalIncome.toFixed(2);
+
     let budgetInputs = document.getElementsByClassName('budget-input');
     let totalBudget = 0;
 
@@ -104,6 +108,8 @@ document.getElementById('income-budget-next-button').addEventListener('click', f
 
         totalBudget += budgetValue;
     }
+
+    document.getElementById('total-budget').textContent = totalBudget.toFixed(2);
 
     // Check if the budget is greater than the income
     if (totalBudget > totalIncome) {
@@ -125,7 +131,6 @@ document.getElementById('spends-next-button').addEventListener('click', function
 
     let spendsInputs = document.getElementsByClassName('spends-input');
     let allSpendsInputsValid = true;
-    let totalSpends = 0;
 
     // Check spends inputs
     for (let spendsInput of spendsInputs) {
@@ -141,10 +146,12 @@ document.getElementById('spends-next-button').addEventListener('click', function
         totalSpends += spendsValue;
     }
 
+    document.getElementById('total-spends').textContent = totalSpends.toFixed(2);
+
     if (allSpendsInputsValid) {
         let totalSavings = document.getElementById('total-savings');
         let savingsCalculation = parseFloat(totalIncome) - parseFloat(totalSpends);
-        totalSavings.innerHTML = parseFloat(savingsCalculation);
+        totalSavings.innerHTML = parseFloat(savingsCalculation).toFixed(2);
         let totalBudget = 0;
 
         /**
