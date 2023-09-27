@@ -75,6 +75,7 @@ document.getElementById('income-budget-back-button').addEventListener('click', f
 // Check income vs. budget & display spends modal
 document.getElementById('income-budget-next-button').addEventListener('click', function (event) {
     event.preventDefault();
+    totalIncome = 0;
 
     let incomeInputs = document.getElementsByClassName('income-input');
 
@@ -129,6 +130,8 @@ document.getElementById('spends-back-button').addEventListener('click', function
 document.getElementById('spends-next-button').addEventListener('click', function (event) {
     event.preventDefault();
 
+    totalSpends = 0;
+    
     let spendsInputs = document.getElementsByClassName('spends-input');
     let allSpendsInputsValid = true;
 
