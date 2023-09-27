@@ -2,6 +2,8 @@ let totalIncome = 0;
 let totalBudget = 0;
 let totalSpends = 0;
 
+var myChart;
+
 // Display income & budget modal
 document.addEventListener('DOMContentLoaded', function () {
     const goButton = document.getElementById('go-button');
@@ -131,7 +133,7 @@ document.getElementById('spends-next-button').addEventListener('click', function
     event.preventDefault();
 
     totalSpends = 0;
-    
+
     let spendsInputs = document.getElementsByClassName('spends-input');
     let allSpendsInputsValid = true;
 
@@ -192,7 +194,7 @@ document.getElementById('spends-next-button').addEventListener('click', function
             }
 
             // Call the function to update the bar graph
-            updatePieChart(spendPercentages);
+            updateBarGraph(spendPercentages);
         }
         showResults(totalIncome);
         displayModal(document.getElementById('results-modal'));
@@ -202,7 +204,13 @@ document.getElementById('spends-next-button').addEventListener('click', function
 /**
  * Updates the results bar graph
  */
-function updatePieChart(spendPercentages) {
+function updateBarGraph(spendPercentages) {
+
+    // Destroy the previous chart if it exists
+    if (myChart != undefined) {
+        myChart.destroy();
+    }   
+
     var categories = ['Rent / Mortgage', 'Transport / Vehicle', 'Food', 'Utilities', 'Loan Repayments', 'Other'];
     var barColors = [
         "#BE9FE1",
