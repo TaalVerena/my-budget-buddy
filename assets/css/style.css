@@ -92,16 +92,17 @@ header {
 }
 
 #logo-container,
-#contact-us {
+#about-and-contact {
     margin: 25px 18px;
 }
 
-#contact-us {
-    font-size: 22px;
+#about-and-contact {
+    font-size: 20px;
     color: #5EAB95;
     border: 3px solid #5EAB95;
     border-radius: 15px;
     padding: 7px;
+    text-align: center;
 }
 
 /* Landing page cover text*/
