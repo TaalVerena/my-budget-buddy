@@ -74,6 +74,10 @@ button {
     align-items: center;
 }
 
+ol, ul{
+    padding-left: 30px;
+}
+
 /* Header */
 header {
     top: 0;
