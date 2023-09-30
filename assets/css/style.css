@@ -22,7 +22,8 @@ html {
 }
 
 /* Generic styles */
-h1, .modal-heading {
+h1,
+.modal-heading {
     margin: 30px;
     font-size: 43px;
     line-height: 60px;
@@ -74,7 +75,8 @@ button {
     align-items: center;
 }
 
-ol, ul{
+ol,
+ul {
     padding-left: 30px;
 }
 
@@ -116,8 +118,8 @@ header {
     line-height: 35px;
 }
 
-/* Modals */    
-.modal {    
+/* Modals */
+.modal {
     max-width: 100%;
     width: 100%;
     height: auto;
@@ -141,26 +143,41 @@ header {
     margin-bottom: 15px;
 }
 
-.modal-body label {
-    display: inline-block;
-    width: 135px;
-    font-size: 17px;
-    margin: 2px;
+.modal-category-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
 
-.modal-body select, input {
+.modal-category-container>label,
+.modal-category-container>div {
+    min-width: 130px;
+    max-width: 150px;
+}
+
+.modal-category-container input {
+    width: 100px;
+    max-width: 150px;
     display: inline-block;
-    width: 90px;
     font-size: 14px;
     margin: 2px;
 }
 
-.background-mint {  
+.select {
+    padding: 0 15.5px 0 14px;
+}
+
+.select select {
+    width: 100%;
+}
+
+.background-mint {
     background-color: #B0F8E3;
     border: 3px solid #5EAB95;
 }
 
-.background-lavendar {  
+.background-lavendar {
     background-color: #E6E6FA;
     border: 3px solid #A6A6F9;
 }

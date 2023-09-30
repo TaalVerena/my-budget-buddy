@@ -23,7 +23,8 @@
             <a href="index.html" aria-label="Budget Buddy logo; takes you to the Home Page" class="logo"
                 id="logo-container"><img src="assets/images/budget-buddy-logo.png" alt="logo" class="logo"
                     id="logo"></a>
-            <a href="about-and-contact.html" aria-label="Takes you to the My Budget Buddy About & Contact Page" id="about-and-contact">About &<br>Contact</a>
+            <a href="about-and-contact.html" aria-label="Takes you to the My Budget Buddy About & Contact Page"
+                id="about-and-contact">About &<br>Contact</a>
         </header>
 
         <!-- Cover text -->
@@ -49,63 +50,78 @@
                 </div>
                 <div class="background-mint modal-body">
                     <!-- Pay period -->
-                    <div>
-                        <label for="pay-period" class="modal-label">Pay Period</label>
-                        <select name="pay_period" id="pay-period" class="modal-input">
-                            <option value="weekly">Weekly</option>
-                            <option value="fortnightly">Fortnightly</option>
-                            <option value="monthly">Monthly</option>
-                        </select>
+                    <div class="modal-category-container">
+                        <label for="pay-period">Pay Period</label>
+                        <div class="select">
+                            <select name="pay_period" id="pay-period">
+                                <option value="weekly">Weekly</option>
+                                <option value="fortnightly">Fortnightly</option>
+                                <option value="monthly">Monthly</option>
+                            </select>
+                        </div>
+
                     </div>
 
                     <!-- Currency -->
-                    <div>
-                        <label for="currency" class="modal-label">Currency</label>
-                        <select name="currency" id="currency" class="modal-input">
-                            <option value="€">€</option>
-                            <option value="£">£</option>
-                            <option value="$">$</option>
-                        </select>
+                    <div class="modal-category-container">
+                        <label for="currency">Currency</label>
+                        <div class="select">
+                            <select name="currency" id="currency">
+                                <option value="€">€</option>
+                                <option value="£">£</option>
+                                <option value="$">$</option>
+                            </select>
+                        </div>
                     </div>
 
                     <!-- Salary -->
-                    <div>
-                        <label for="salary" class="modal-label">Salary</label>
-                        <span class="currency-selected">€</span>
-                        <input type="number" id="salary" name="salary" placeholder="100" required
-                            class="modal-input income-input">
+                    <div class="modal-category-container">
+                        <label for="salary">Salary</label>
+                        <div>
+                            <span class="currency-selected">€</span>
+                            <input type="number" id="salary" name="salary" placeholder="100" required
+                                class="modal-input income-input">
+                        </div>
                     </div>
 
                     <!-- Commission -->
-                    <div>
-                        <label for="commission" class="modal-label">Commission</label>
-                        <span class="currency-selected">€</span>
-                        <input type="number" id="commission" name="commission" placeholder="100" required
-                            class="modal-input income-input">
+                    <div class="modal-category-container">
+                        <label for="commission">Commission</label>
+                        <div>
+                            <span class="currency-selected">€</span>
+                            <input type="number" id="commission" name="commission" placeholder="100" required
+                                class="modal-input income-input">
+                        </div>
                     </div>
 
                     <!-- Overtime -->
-                    <div>
-                        <label for="overtime" class="modal-label">Overtime</label>
-                        <span class="currency-selected">€</span>
-                        <input type="number" id="overtime" name="overtime" placeholder="100" required
-                            class="modal-input income-input">
+                    <div class="modal-category-container">
+                        <label for="overtime">Overtime</label>
+                        <div>
+                            <span class="currency-selected">€</span>
+                            <input type="number" id="overtime" name="overtime" placeholder="100" required
+                                class="modal-input income-input">
+                        </div>
                     </div>
 
                     <!-- Bonus -->
-                    <div>
-                        <label for="bonus" class="modal-label">Bonus</label>
-                        <span class="currency-selected">€</span>
-                        <input type="number" id="bonus" name="bonus" placeholder="100" required
-                            class="modal-input income-input">
+                    <div class="modal-category-container">
+                        <label for="bonus">Bonus</label>
+                        <div>
+                            <span class="currency-selected">€</span>
+                            <input type="number" id="bonus" name="bonus" placeholder="100" required
+                                class="modal-input income-input">
+                        </div>
                     </div>
 
                     <!-- Other income -->
-                    <div>
-                        <label for="other-income" class="modal-label">Other</label>
-                        <span class="currency-selected">€</span>
-                        <input type="number" id="other-income" name="other_income" placeholder="100" required
-                            class="modal-input income-input">
+                    <div class="modal-category-container">
+                        <label for="other-income">Other</label>
+                        <div>
+                            <span class="currency-selected">€</span>
+                            <input type="number" id="other-income" name="other_income" placeholder="100" required
+                                class="modal-input income-input">
+                        </div>
                     </div>
                 </div>
             </section>
@@ -117,51 +133,63 @@
                 </div>
                 <div class="background-lavendar modal-body">
                     <!-- Rent / mortgage budget -->
-                    <div>
+                    <div class="modal-category-container">
                         <label for="rent-mortgage-budget">Rent / Mortgage</label>
-                        <span class="currency-selected">€</span>
-                        <input type="number" id="rent-mortgage-budget" class="budget-input" name="rent_mortgage_budget"
-                            placeholder="100" required>
+                        <div>
+                            <span class="currency-selected">€</span>
+                            <input type="number" id="rent-mortgage-budget" class="budget-input"
+                                name="rent_mortgage_budget" placeholder="100" required>
+                        </div>
                     </div>
 
                     <!-- Transport / vehicle budget -->
-                    <div>
+                    <div class="modal-category-container">
                         <label for="transport-vehicle-budget">Transport / Vehicle</label>
-                        <span class="currency-selected">€</span>
-                        <input type="number" id="transport-vehicle-budget" class="budget-input"
-                            name="transport_vehicle_budget" placeholder="100" required>
+                        <div>
+                            <span class="currency-selected">€</span>
+                            <input type="number" id="transport-vehicle-budget" class="budget-input"
+                                name="transport_vehicle_budget" placeholder="100" required>
+                        </div>
                     </div>
 
                     <!-- Food budget -->
-                    <div>
+                    <div class="modal-category-container">
                         <label for="food-budget">Food</label>
-                        <span class="currency-selected">€</span>
-                        <input type="number" id="food-budget" class="budget-input" name="food_budget" placeholder="100"
-                            required>
+                        <div>
+                            <span class="currency-selected">€</span>
+                            <input type="number" id="food-budget" class="budget-input" name="food_budget"
+                                placeholder="100" required>
+                        </div>
                     </div>
 
                     <!-- Utilities budget -->
-                    <div>
+                    <div class="modal-category-container">
                         <label for="utilities-budget">Utilities</label>
-                        <span class="currency-selected">€</span>
-                        <input type="number" id="utilities-budget" class="budget-input" name="utilities_budget"
-                            placeholder="100" required>
+                        <div>
+                            <span class="currency-selected">€</span>
+                            <input type="number" id="utilities-budget" class="budget-input" name="utilities_budget"
+                                placeholder="100" required>
+                        </div>
                     </div>
 
                     <!-- Loan repayments budget -->
-                    <div>
+                    <div class="modal-category-container">
                         <label for="loan-repayments-budget">Loan Repayments</label>
-                        <span class="currency-selected">€</span>
-                        <input type="number" id="loan-repayments-budget" class="budget-input"
-                            name="loan_repayments_budget" placeholder="100" required>
+                        <div>
+                            <span class="currency-selected">€</span>
+                            <input type="number" id="loan-repayments-budget" class="budget-input"
+                                name="loan_repayments_budget" placeholder="100" required>
+                        </div>
                     </div>
 
                     <!-- Other budget -->
-                    <div>
+                    <div class="modal-category-container">
                         <label for="other-budget">Other</label>
-                        <span class="currency-selected">€</span>
-                        <input type="number" id="other-budget" class="budget-input" name="other_budget"
-                            placeholder="100" required>
+                        <div>
+                            <span class="currency-selected">€</span>
+                            <input type="number" id="other-budget" class="budget-input" name="other_budget"
+                                placeholder="100" required>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -186,51 +214,63 @@
                 </div>
                 <div class="background-mint modal-body">
                     <!-- Rent / mortgage spends -->
-                    <div>
+                    <div class="modal-category-container">
                         <label for="rent-mortgage-spends">Rent / Mortgage</label>
-                        <span class="currency-selected">€</span>
-                        <input type="number" id="rent-mortgage-spends" class="spends-input" name="rent_mortgage_spends"
-                            placeholder="100" required>
+                        <div>
+                            <span class="currency-selected">€</span>
+                            <input type="number" id="rent-mortgage-spends" class="spends-input"
+                                name="rent_mortgage_spends" placeholder="100" required>
+                        </div>
                     </div>
 
                     <!-- Transport / vehicle spends -->
-                    <div>
+                    <div class="modal-category-container">
                         <label for="transport-vehicle-spends">Transport / Vehicle</label>
-                        <span class="currency-selected">€</span>
-                        <input type="number" id="transport-vehicle-spends" class="spends-input"
-                            name="transport_vehicle_spends" placeholder="100" required>
+                        <div>
+                            <span class="currency-selected">€</span>
+                            <input type="number" id="transport-vehicle-spends" class="spends-input"
+                                name="transport_vehicle_spends" placeholder="100" required>
+                        </div>
                     </div>
 
                     <!-- Food spends -->
-                    <div>
+                    <div class="modal-category-container">
                         <label for="food-spends">Food</label>
-                        <span class="currency-selected">€</span>
-                        <input type="number" id="food-spends" class="spends-input" name="food_spends" placeholder="100"
-                            required>
+                        <div>
+                            <span class="currency-selected">€</span>
+                            <input type="number" id="food-spends" class="spends-input" name="food_spends"
+                                placeholder="100" required>
+                        </div>
                     </div>
 
                     <!-- Utilities spends -->
-                    <div>
+                    <div class="modal-category-container">
                         <label for="utilities-spends">Utilities</label>
-                        <span class="currency-selected">€</span>
-                        <input type="number" id="utilities-spends" class="spends-input" name="utilities_spends"
-                            placeholder="100" required>
+                        <div>
+                            <span class="currency-selected">€</span>
+                            <input type="number" id="utilities-spends" class="spends-input" name="utilities_spends"
+                                placeholder="100" required>
+                        </div>
                     </div>
 
                     <!-- Loan repayments spends -->
-                    <div>
+                    <div class="modal-category-container">
                         <label for="loan-repayments-spends">Loan Repayments</label>
-                        <span class="currency-selected">€</span>
-                        <input type="number" id="loan-repayments-spends" class="spends-input"
-                            name="loan_repayments_spends" placeholder="100" required>
+                        <div>
+                            <span class="currency-selected">€</span>
+                            <input type="number" id="loan-repayments-spends" class="spends-input"
+                                name="loan_repayments_spends" placeholder="100" required>
+                        </div>
                     </div>
 
                     <!-- Other spends -->
-                    <div>
+                    <div class="modal-category-container">
                         <label for="other-spends">Other</label>
-                        <span class="currency-selected">€</span>
-                        <input type="number" id="other-spends" class="spends-input" name="other_spends"
-                            placeholder="100" required>
+                        <div>
+                            <span class="currency-selected">€</span>
+                            <input type="number" id="other-spends" class="spends-input" name="other_spends"
+                                placeholder="100" required>
+                        </div>
                     </div>
                 </div>
             </section>
