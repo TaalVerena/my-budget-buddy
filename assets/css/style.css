@@ -22,7 +22,7 @@ html {
 }
 
 /* Generic styles */
-h1, h2 {
+h1, .modal-heading {
     margin: 30px;
     font-size: 43px;
     line-height: 60px;
@@ -126,14 +126,16 @@ header {
 }
 
 .modal-title {
-    width: 280px;
+    width: 90vw;
+    max-width: 768px;
     height: 50px;
     border-radius: 20px;
     margin-bottom: 12px;
 }
 
 .modal-body {
-    width: 280px;
+    width: 90vw;
+    max-width: 768px;
     border-radius: 20px;
     padding: 10px;
     margin-bottom: 15px;
