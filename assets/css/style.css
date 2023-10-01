@@ -81,7 +81,7 @@ button {
 
 ol,
 ul {
-    padding-left: 30px;
+    padding-left: 20px;
 }
 
 /* Header */
@@ -271,6 +271,10 @@ canvas {
     line-height: 20px;
 }
 
+#about-us-p {
+    padding: 10px;
+}
+
 .pink-background-border {
     background-color: rgba(242, 213, 213, 0.8);
     box-shadow: 5px 5px rgb(240, 155, 155);
@@ -289,6 +293,10 @@ canvas {
 
 #how-it-works {
     text-align: left;
+}
+
+#how-it-works li {
+    padding: 5px 10px;
 }
 
 #how-it-works > p {
