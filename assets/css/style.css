@@ -151,7 +151,8 @@ header {
 }
 
 .modal-category-container>label,
-.modal-category-container>div {
+.modal-category-container>div,
+.modal-category-container>span {
     min-width: 130px;
     max-width: 150px;
 }
@@ -162,6 +163,11 @@ header {
     display: inline-block;
     font-size: 14px;
     margin: 2px;
+}
+
+.modal-category-container .over-or-under {
+    position: relative;
+    float: right;
 }
 
 .select {

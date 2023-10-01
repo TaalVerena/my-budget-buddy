@@ -178,12 +178,12 @@ document.getElementById('spends-next-button').addEventListener('click', function
                     overOrUnder[i].style.color = '#738CBF';
                     overOrUnder[i].style.fontWeight = 'bold';
                 } else if (parseFloat(results[i].innerHTML) > 0) {
-                    overOrUnder[i].innerHTML = "Under Budget";
+                    overOrUnder[i].innerHTML = "Under";
                     overOrUnder[i].style.color = 'green';
                     overOrUnder[i].style.fontWeight = 'bold';
                 } else {
                     results[i].innerHTML *= -1;
-                    overOrUnder[i].innerHTML = "Over Budget";
+                    overOrUnder[i].innerHTML = "Over";
                     overOrUnder[i].style.color = 'red';
                     overOrUnder[i].style.fontWeight = 'bold';
                 }
