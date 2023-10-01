@@ -294,3 +294,11 @@ canvas {
     padding: 20px 10px;
     line-height: 20px;
 }
+
+#how-it-works {
+    text-align: left;
+}
+
+#how-it-works > p {
+    text-align: center;
+}
