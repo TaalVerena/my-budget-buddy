@@ -295,117 +295,120 @@
                 <div>
                     <h3 class="background-lavendar modal-title flex-center" id="results-title">My Weekly Results</h3>
                 </div>
+                <div id="results-container">
+                    <div>
+                        <!-- Totals -->
+                        <div class="background-lavendar modal-body">
+                            <!-- Total income -->
+                            <div id="total-income-container" class="modal-category-container">
+                                <span><strong>Total Income: </strong></span>
+                                <div>
+                                    <span class="currency-selected">€</span>
+                                    <span id="total-income"></span>
+                                </div>
+                            </div>
 
-                <!-- Totals -->
-                <div class="background-lavendar modal-body">
-                    <!-- Total income -->
-                    <div id="total-income-container" class="modal-category-container">
-                        <span><strong>Total Income: </strong></span>
-                        <div>
-                            <span class="currency-selected">€</span>
-                            <span id="total-income"></span>
+                            <!-- Total budget -->
+                            <div id="total-budget-container" class="modal-category-container">
+                                <span><strong>Total Budget: </strong></span>
+                                <div>
+                                    <span class="currency-selected">€</span>
+                                    <span id="total-budget"></span>
+                                </div>
+                            </div>
+
+                            <!-- Total spends -->
+                            <div id="total-spends-container" class="modal-category-container">
+                                <span><strong>Total Spends: </strong></span>
+                                <div>
+                                    <span class="currency-selected">€</span>
+                                    <span id="total-spends"></span>
+                                </div>
+                            </div>
+
+                            <!-- Total savings -->
+                            <div id="savings-container" class="modal-category-container">
+                                <span><strong>Total Savings: </strong></span>
+                                <div>
+                                    <span class="currency-selected">€</span>
+                                    <span id="total-savings"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Results for each category -->
+                        <div class="background-lavendar modal-body">
+                            <!-- Headings -->
+                            <div class="modal-category-container">
+                                <span><strong>Over Budget, Under Budget or On Track:</strong></span>
+                            </div>
+
+                            <!-- Rent / mortgage results -->
+                            <div class="modal-category-container">
+                                <span>Rent / Mortgage</span>
+                                <div>
+                                    <span class="currency-selected">€</span>
+                                    <span class="results"></span>
+                                    <span class="over-or-under"></span>
+                                </div>
+                            </div>
+
+                            <!-- Transport / vehicle results -->
+                            <div class="modal-category-container">
+                                <span>Transport / Vehicle</span>
+                                <div>
+                                    <span class="currency-selected">€</span>
+                                    <span class="results"></span>
+                                    <span class="over-or-under"></span>
+                                </div>
+                            </div>
+
+                            <!-- Food results -->
+                            <div class="modal-category-container">
+                                <span>Food</span>
+                                <div>
+                                    <span class="currency-selected">€</span>
+                                    <span class="results"></span>
+                                    <span class="over-or-under"></span>
+                                </div>
+                            </div>
+
+                            <!-- Utilities results -->
+                            <div class="modal-category-container">
+                                <span>Utilities</span>
+                                <div>
+                                    <span class="currency-selected">€</span>
+                                    <span class="results"></span>
+                                    <span class="over-or-under"></span>
+                                </div>
+                            </div>
+
+                            <!-- Loan repayments results -->
+                            <div class="modal-category-container">
+                                <span>Loan Repayments</span>
+                                <div>
+                                    <span class="currency-selected">€</span>
+                                    <span class="results"></span>
+                                    <span class="over-or-under"></span>
+                                </div>
+                            </div>
+
+                            <!-- Other results -->
+                            <div class="modal-category-container">
+                                <span>Other</span>
+                                <div>
+                                    <span class="currency-selected">€</span>
+                                    <span class="results"></span>
+                                    <span class="over-or-under"></span>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
-                    <!-- Total budget -->
-                    <div id="total-budget-container" class="modal-category-container">
-                        <span><strong>Total Budget: </strong></span>
-                        <div>
-                            <span class="currency-selected">€</span>
-                            <span id="total-budget"></span>
-                        </div>
+                    <!-- Results chart -->
+                    <div id="chart-container">
+                        <canvas id="results-graph"></canvas>
                     </div>
-
-                    <!-- Total spends -->
-                    <div id="total-spends-container" class="modal-category-container">
-                        <span><strong>Total Spends: </strong></span>
-                        <div>
-                            <span class="currency-selected">€</span>
-                            <span id="total-spends"></span>
-                        </div>
-                    </div>
-
-                    <!-- Total savings -->
-                    <div id="savings-container" class="modal-category-container">
-                        <span><strong>Total Savings: </strong></span>
-                        <div>
-                            <span class="currency-selected">€</span>
-                            <span id="total-savings"></span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Results for each category -->
-                <div class="background-lavendar modal-body">
-                    <!-- Headings -->
-                    <div class="modal-category-container">
-                        <span><strong>Over Budget, Under Budget or On Track:</strong></span>
-                    </div>
-
-                    <!-- Rent / mortgage results -->
-                    <div class="modal-category-container">
-                        <span>Rent / Mortgage</span>
-                        <div>
-                            <span class="currency-selected">€</span>
-                            <span class="results"></span>
-                            <span class="over-or-under"></span>
-                        </div>
-                    </div>
-
-                    <!-- Transport / vehicle results -->
-                    <div class="modal-category-container">
-                        <span>Transport / Vehicle</span>
-                        <div>
-                            <span class="currency-selected">€</span>
-                            <span class="results"></span>
-                            <span class="over-or-under"></span>
-                        </div>
-                    </div>
-
-                    <!-- Food results -->
-                    <div class="modal-category-container">
-                        <span>Food</span>
-                        <div>
-                            <span class="currency-selected">€</span>
-                            <span class="results"></span>
-                            <span class="over-or-under"></span>
-                        </div>
-                    </div>
-
-                    <!-- Utilities results -->
-                    <div class="modal-category-container">
-                        <span>Utilities</span>
-                        <div>
-                            <span class="currency-selected">€</span>
-                            <span class="results"></span>
-                            <span class="over-or-under"></span>
-                        </div>
-                    </div>
-
-                    <!-- Loan repayments results -->
-                    <div class="modal-category-container">
-                        <span>Loan Repayments</span>
-                        <div>
-                            <span class="currency-selected">€</span>
-                            <span class="results"></span>
-                            <span class="over-or-under"></span>
-                        </div>
-                    </div>
-
-                    <!-- Other results -->
-                    <div class="modal-category-container">
-                        <span>Other</span>
-                        <div>
-                            <span class="currency-selected">€</span>
-                            <span class="results"></span>
-                            <span class="over-or-under"></span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Results chart -->
-                <div id="chart-container">
-                    <canvas id="results-graph"></canvas>
                 </div>
             </section>
 

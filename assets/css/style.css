@@ -224,14 +224,18 @@ canvas {
 
 /* Media queries */
 
-/* Media query for min-width 1000px*/
-@media screen and (min-width: 1000px) {
-    #input-budget-container {
+/* Media query for min-width 700px*/
+@media screen and (min-width: 700px) {
+    #input-budget-container, #results-container {
         display: flex;
         width: 100%;
         align-items: center;
         justify-content: center;
         gap: 10px;
         margin: 25px 0;
+    }
+
+    #results-title {
+        width: 610px;
     }
 }
