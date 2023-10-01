@@ -336,6 +336,27 @@ canvas {
 
 /* Media queries */
 
+/* Media query for min-width 450px*/
+@media screen and (min-width: 450px) {
+
+    .user-details-container {
+        flex-direction: row;
+    }
+
+    #contact-form label {
+        margin-left: 10px;
+    }
+
+    #query-container {
+        flex-direction: column;
+    }
+
+    #query-container > textarea {
+        margin: 5px 10px;
+    }
+    
+}
+
 /* Media query for min-width 700px*/
 @media screen and (min-width: 700px) {
 
