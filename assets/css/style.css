@@ -128,7 +128,7 @@ header {
 }
 
 .modal-title {
-    width: 90vw;
+    min-width: calc(.modal-body)
     max-width: 768px;
     height: 50px;
     border-radius: 20px;
@@ -136,8 +136,8 @@ header {
 }
 
 .modal-body {
-    width: 90vw;
-    max-width: 768px;
+    min-width: fit-content;
+    max-width: fit-content;
     border-radius: 20px;
     padding: 10px;
     margin-bottom: 15px;
