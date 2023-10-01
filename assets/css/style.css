@@ -141,6 +141,10 @@ header {
     margin-bottom: 15px;
 }
 
+#budget-container {
+    min-height: 162px;
+}
+
 .modal-category-container {
     display: flex;
     justify-content: center;
@@ -206,4 +210,18 @@ footer {
 /* Results graph */
 canvas {
     margin-bottom: 30px;
+}
+
+/* Media queries */
+
+/* Media query for min-width 1000px*/
+@media screen and (min-width: 1000px) {
+    #input-budget-container {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        margin: 25px 0;
+    }
 }
