@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Cardo&family=Montserrat&display=swap');
 
 /* Default styles */
 * {
@@ -32,6 +32,7 @@ h1,
     line-height: 60px;
     text-shadow: 6px 6px #F2D5D5;
     text-align: center;
+    font-family: 'Cardo', serif;
 }
 
 button {
@@ -270,9 +271,26 @@ canvas {
     text-align: center;
 }
 
-#about-us-p {
+.about-background {
     background-color: rgba(242, 213, 213, 0.8);
+    box-shadow: 5px 5px rgb(240, 155, 155);
     border-radius: 10px;
-    padding: 10px;
+    padding: 20px 10px;
+    line-height: 20px;
+}
+
+.pink-background-border {
+    background-color: rgba(242, 213, 213, 0.8);
+    box-shadow: 5px 5px rgb(240, 155, 155);
+    border-radius: 10px;
+    padding: 20px 10px;
+    line-height: 20px;
+}
+
+.purple-background-border {
+    background-color: rgba(230, 230, 250, 0.8);
+    box-shadow: 5px 5px rgb(149, 149, 255);
+    border-radius: 10px;
+    padding: 20px 10px;
     line-height: 20px;
 }
