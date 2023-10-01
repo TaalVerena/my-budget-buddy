@@ -320,9 +320,18 @@ canvas {
     padding: 5px;
 }
 
-#query-container {
+.user-details-container {
+    display: flex;
     flex-direction: column;
     gap: 10px;
+}
+
+.user-details-container input {
+    width: 200px;
+}
+
+#query {
+    height: 250px;
 }
 
 /* Media queries */
