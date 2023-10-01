@@ -226,26 +226,6 @@ canvas {
     height: 300px !important;
 }
 
-/* Media queries */
-
-/* Media query for min-width 700px*/
-@media screen and (min-width: 700px) {
-
-    #input-budget-container,
-    #results-container {
-        display: flex;
-        width: 100%;
-        align-items: center;
-        justify-content: center;
-        gap: 10px;
-        margin: 25px 0;
-    }
-
-    #results-title {
-        width: 610px;
-    }
-}
-
 /* About and contact page */
 .about-heading {
     display: flex;
@@ -301,4 +281,46 @@ canvas {
 
 #how-it-works > p {
     text-align: center;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    max-width: 800px;
+    gap: 10px;
+}
+
+#contact-form label {
+    width: 100px;
+    text-align: left;
+}
+
+#contact-form input, #contact-form textarea {
+    padding: 5px;
+}
+
+#query-container {
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Media queries */
+
+/* Media query for min-width 700px*/
+@media screen and (min-width: 700px) {
+
+    #input-budget-container,
+    #results-container {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        margin: 25px 0;
+    }
+
+    #results-title {
+        width: 610px;
+    }
 }
