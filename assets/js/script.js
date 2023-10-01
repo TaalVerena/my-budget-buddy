@@ -1,8 +1,8 @@
 let totalIncome = 0;
-let totalBudget = 0;
+const totalBudget = 0;
 let totalSpends = 0;
 
-var myChart;
+let myChart;
 
 // Display income & budget modal
 document.addEventListener('DOMContentLoaded', function () {
@@ -79,7 +79,7 @@ document.getElementById('income-budget-next-button').addEventListener('click', f
     event.preventDefault();
     totalIncome = 0;
 
-    let incomeInputs = document.getElementsByClassName('income-input');
+    const incomeInputs = document.getElementsByClassName('income-input');
 
     // Check income inputs
     for (let incomeInput of incomeInputs) {
@@ -96,7 +96,7 @@ document.getElementById('income-budget-next-button').addEventListener('click', f
 
     document.getElementById('total-income').textContent = totalIncome.toFixed(2);
 
-    let budgetInputs = document.getElementsByClassName('budget-input');
+    const budgetInputs = document.getElementsByClassName('budget-input');
     let totalBudget = 0;
 
     // Check budget inputs
@@ -134,7 +134,7 @@ document.getElementById('spends-next-button').addEventListener('click', function
 
     totalSpends = 0;
 
-    let spendsInputs = document.getElementsByClassName('spends-input');
+    const spendsInputs = document.getElementsByClassName('spends-input');
     let allSpendsInputsValid = true;
 
     // Check spends inputs
@@ -154,7 +154,7 @@ document.getElementById('spends-next-button').addEventListener('click', function
     document.getElementById('total-spends').textContent = totalSpends.toFixed(2);
 
     if (allSpendsInputsValid) {
-        let totalSavings = document.getElementById('total-savings');
+        const totalSavings = document.getElementById('total-savings');
         let savingsCalculation = parseFloat(totalIncome) - parseFloat(totalSpends);
         totalSavings.innerHTML = parseFloat(savingsCalculation).toFixed(2);
         let totalBudget = 0;
@@ -163,11 +163,11 @@ document.getElementById('spends-next-button').addEventListener('click', function
          * Displays the result for each budget vs spend input & calculates spend %
          */
         function showResults(totalIncome) {
-            let budgetInputs = document.getElementsByClassName('budget-input');
-            let results = document.getElementsByClassName('results');
-            let overOrUnder = document.getElementsByClassName('over-or-under');
+            const budgetInputs = document.getElementsByClassName('budget-input');
+            const results = document.getElementsByClassName('results');
+            const overOrUnder = document.getElementsByClassName('over-or-under');
 
-            let spendPercentages = [];
+            const spendPercentages = [];
 
             for (let i = 0; i < results.length; i++) {
                 totalBudget += parseFloat(budgetInputs[i].value);
@@ -211,8 +211,8 @@ function updateBarGraph(spendPercentages) {
         myChart.destroy();
     }   
 
-    var categories = ['Rent', 'Transport', 'Food', 'Utilities', 'Loan', 'Other'];
-    var barColors = [
+    const categories = ['Rent', 'Transport', 'Food', 'Utilities', 'Loan', 'Other'];
+    const barColors = [
         "#BE9FE1",
         "#C9B6E4",
         "#E1CCEC",
