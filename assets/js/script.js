@@ -211,7 +211,7 @@ function updateBarGraph(spendPercentages) {
         myChart.destroy();
     }   
 
-    var categories = ['Rent / Mortgage', 'Transport / Vehicle', 'Food', 'Utilities', 'Loan Repayments', 'Other'];
+    var categories = ['Rent', 'Transport', 'Food', 'Utilities', 'Loan', 'Other'];
     var barColors = [
         "#BE9FE1",
         "#C9B6E4",
@@ -235,8 +235,6 @@ function updateBarGraph(spendPercentages) {
             legend: { display: false },
             maintainAspectRatio: false,
             responsive: true,
-            width: 300,
-            height: 1000,
             title: {
                 display: true,
                 text: "My Spends % Per Category",
