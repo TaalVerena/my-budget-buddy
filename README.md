@@ -2,7 +2,7 @@
 ## Introduction
 
 ### Live Website
-
+The live My Budget Buddy website can be found [here](https://taalverena.github.io/my-budget-buddy/).
 ## Table of Contents
 
 ## User Experience
@@ -87,7 +87,7 @@
   
     ![Header Mobile](README-media/header-mobile.png)
 - On larger devices, the layout changes to shift the header information to the footer to make the main content stand out more.
-
+    ![Header Desktop](README-media/header-desktop.png)
 
 #### Landing Page
 - The landing page offers a minimalistic layout including the header, cover text title, short description, "Let's Go" button and the footer.
@@ -97,23 +97,29 @@
     ![Landing Page Mobile](README-media/landing-mobile.png)
 #### Footer
 - On mobiles the footer contains the social media links which open in separate tabs and include aria labels for accessibility.
-- On larger devices the footer includes the social media links as well as the logo and Contact Us button to put the main content as the focus. The logo takes the user to the home page and the Contact Us button takes the user to the contact form.
 
     ![Footer Mobile](README-media/footer-mobile.png)
+- On larger devices the footer includes the social media links as well as the logo and Contact Us button to put the main content as the focus. The logo takes the user to the home page and the Contact Us button takes the user to the contact form.
+
+    ![Footer Desktop](README-media/footer-desktop.png)
 #### Income & Budget Modal
 - On mobiles the user is presented with the my income modal where they select their pay period and currency from dropdowns and fill in their income. By scrolling down, the user is then presented with the budget modal where they fill in their budget for different categories.
+
+    ![Income Modal Section Mobile](README-media/income-modal-section-mobile.png)
+    ![Budget Modal Section Mobile](README-media/budget-modal-section-mobile.png)
 - On larger devices, the layout is changed to present the user with the income modal and budget modal next to each other.
+
+    ![Income Budget Modal Desktop](README-media/income-budget-modal-desktop.png)
 - After the user has selected the pay period, the selection will appear in the heading as confirmation.
 - After the user has selected the currency, the currency will appear next to the input fields as confirmation.
 - When the "Next" button is clicked, a calculation is done to check if the budget is less than or equal to the income. If it is, the user is taken to the next modal. If the budget is more than the income, the user is presented with an alert to re-visit their budget.
 
-    ![Income Modal Section Mobile](README-media/income-modal-section-mobile.png)
-
-    ![Budget Modal Section Mobile](README-media/budget-modal-section-mobile.png)
 #### Spends Modal
 - The spends modal has the same information as the budget modal and once the "Next" button is clicked, the user is taken to the results modal.
 
     ![Spends Modal Mobile](README-media/spends-modal-mobile.png)
+    
+    ![Spends Modal Desktop](README-media/spends-modal-desktop.png)
 #### Results Modal
 - On mobiles the user is first provided with a breakdown of their results per category. After scrolling, the user is also provided with a pie chart as an overall result.
 - On larger devices, the user is provided with the breakdown as well as the pie chart next to each other.
@@ -128,16 +134,35 @@
     ![Results Modal Categories Mobile](README-media/results-modal-categories-mobile.png)
     
     ![Results Modal Graph Mobile](README-media/results-modal-graph-mobile.png)
-#### Contact Form
-- The contact form layout is the same on mobiles as well as desktops.
+#### About & Contact Page
+- The About & Contact Page consists of an About Us section, How It Works section and Contact Us form.
+- The layout is the same on mobiles and desktops with margin and padding adjusted depending on the device size.
+##### About Us
+- This section gives the user information about what My Budget Buddy is for and confirms that it manages income, expense and budget goals.
+
+    ![About & Contact Landing Mobile](README-media/about-and-contact-landing-mobile.png)
+
+    ![About & Contact Landing Desktop](README-media/about-and-contact-landing-desktop.png)
+##### How It Works
+- This section explains how the website works, how to navigate each modal and what My Budget Buddy can do for them.
+
+    ![How It Works Mobile](README-media/how-it-works-mobile.png)
+
+    ![How It Works Desktop](README-media/how-it-works-desktop.png)
+##### Contact Us
+- This section enables to user to contact the My Budget Buddy team through the use of a quick, minimal contact form.
 - The user fills in their name, email, contact number and query. Each input field checks to confirm that the correct type of information has been inputted.
 - A "Submit" button is visible at the bottom of the contact form and when clicked, the user is taken to the "Thank you Page".
+
+    ![Contact Form Mobile](README-media/contact-form-mobile.png)
+    ![Contact Form Desktop](README-media/contact-form-desktop.png)
 
 #### Thank You Page
 - The "Thank You Page" maintains the same minimal layout as the rest of the website.
 - This provides the user with confirmation that their query has been submitted and one of the team will be in touch.
 - A "Home" button is visible after the message which takes the user to the home page.
-
+    
+    ![Thank You Page Mobile](README-media/thank-you-mobile.png)
 #### 404 Page
 - A 404 page has been designed should a part of the website not load.
 - This lets the user know that something has not gone to plan and directs them to the home page with an arrow.
@@ -146,6 +171,7 @@
 - A minimal favicon has been utilized to correspond with the website layout.
 - This provides ease of use to the user to find the website among any other tabs they may have open.
 
+    ![Favicon](README-media/favicon.png)
 ### Future Features to Implement
 
 ## Testing
