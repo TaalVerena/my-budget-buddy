@@ -95,7 +95,7 @@
       left: 0;
       position: fixed;
       height: 115px;
-      background-color: white;
+      background-color: #30725f;
       z-index: 1;
       display: block;
   }
@@ -111,6 +111,7 @@
   /* Logo & contact us*/
   .logo {
       width: 120px;
+      height: 115px;
   }
 
   #logo-container,
@@ -120,8 +121,8 @@
 
   #about-and-contact {
       font-size: 20px;
-      color: #5EAB95;
-      border: 3px solid #5EAB95;
+      color: white;
+      border: 3px solid white;
       border-radius: 15px;
       padding: 7px;
       text-align: center;
@@ -223,12 +224,16 @@
       position: fixed;
       bottom: 0;
       height: 115px;
-      background-color: white;
+      background-color: #30725f;
       z-index: 1;
   }
 
   .social-links {
       list-style: none;
+  }
+
+  .social-links i {
+    color: white;
   }
 
   .social-links a {
