@@ -290,6 +290,7 @@ My Budget Buddy is a user-friendly platform for managing and analyzing your fina
     - No errors were returned for about-and-contact.html when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Ftaalverena.github.io%2Fmy-budget-buddy%2Fabout-and-contact.html)
     - No errors were returned for thank-you.html when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Ftaalverena.github.io%2Fmy-budget-buddy%2Fthank-you.html)
 - CSS
+    - No errors were returned for style.css when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Ftaalverena.github.io%2Fmy-budget-buddy%2Fassets%2Fcss%2Fstyle.css&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
 - JavaScript
 
 ### WAVE
