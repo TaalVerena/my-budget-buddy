@@ -261,6 +261,18 @@ My Budget Buddy is a user-friendly platform for managing and analyzing your fina
 | about-and-contact.html responsive design 1024px | Check to confirm the layout is responsive and all content is clearly displayed | Layout is responsive and all content is clearly displayed | Pass |
 | about-and-contact.html responsive design 1440px | Check to confirm the layout is responsive and all content is clearly displayed | Layout is responsive and all content is clearly displayed | Pass |
 
+### Thank You Page
+| Test | Action | Expectation | Result |
+| :---: | :---: | :---: | :---: |
+| thank-you.html header logo | Click on logo | User is taken back to the home page (index.html) | Pass |
+| thank-you.html header About & Contact button | Click on About & Contact button | User is taken to the About & Contact page (about-and-contact.html) | Pass |
+| thank-you.html footer social media icons | Click on social media icons | User is taken to the social media page that opens in a new tab | Pass |
+| thank-you.html home button | Click on home button | User is taken back to the home page (index.html) | Pass |
+| thank-you.html responsive design 320px | Check to confirm the layout is responsive and all content is clearly displayed | Layout is responsive and all content is clearly displayed | Pass |
+| thank-you.html responsive design 425px | Check to confirm the layout is responsive and all content is clearly displayed | Layout is responsive and all content is clearly displayed | Pass |
+| thank-you.html responsive design 768px | Check to confirm the layout is responsive and all content is clearly displayed | Layout is responsive and all content is clearly displayed | Pass |
+| thank-you.html responsive design 1024px | Check to confirm the layout is responsive and all content is clearly displayed | Layout is responsive and all content is clearly displayed | Pass |
+| thank-you.html responsive design 1440px | Check to confirm the layout is responsive and all content is clearly displayed | Layout is responsive and all content is clearly displayed | Pass |
 
 ### Lighthouse
 
