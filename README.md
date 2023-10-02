@@ -275,6 +275,14 @@ My Budget Buddy is a user-friendly platform for managing and analyzing your fina
 | thank-you.html responsive design 1440px | Check to confirm the layout is responsive and all content is clearly displayed | Layout is responsive and all content is clearly displayed | Pass |
 
 ### Lighthouse
+| Test | Action | Expectation | Result |
+| :---: | :---: | :---: | :---: |
+| index.html desktop | Run Lighthouse | Lighthouse score of 90 or above for Performance, Accessibility, Best Practices and SEO | Pass |
+| index.html mobile | Run Lighthouse | Lighthouse score of 90 or above for Performance, Accessibility, Best Practices and SEO | Pass |
+| about-and-contact.html desktop | Run Lighthouse | Lighthouse score of 90 or above for Performance, Accessibility, Best Practices and SEO | Pass |
+| about-and-contact.html mobile | Run Lighthouse | Lighthouse score of 90 or above for Performance, Accessibility, Best Practices and SEO | Pass |
+| thank-you.html desktop | Run Lighthouse | Lighthouse score of 90 or above for Performance, Accessibility, Best Practices and SEO | Pass |
+| thank-you.html mobile | Run Lighthouse | Lighthouse score of 90 or above for Performance, Accessibility, Best Practices and SEO | Pass |
 
 ### Validator Testing
 - HTML
