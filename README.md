@@ -369,8 +369,10 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 ### Color Scheme, Fonts & Icons
 - Social media icons sourced from [Font Awesome](https://fontawesome.com/)
 - Email icon sourced from [Icons8](https://icons8.com/)
+- Logo created using [Canva](https://www.canva.com/)
 
 ### Extensions
+- [Chart.js](https://www.chartjs.org/) was used to create the bar graph on the results modal.
 
 ### Other
 - [PiaNotes](https://github.com/AlexaH88/pianotes/blob/main/README.md) README deployment layout was used.
