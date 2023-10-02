@@ -2,7 +2,7 @@ let totalIncome = 0;
 const totalBudget = 0;
 let totalSpends = 0;
 // Used to identify modal elements on the index page
-const indexPageIdentifier = document.getElementById('go-button')
+const indexPageIdentifier = document.getElementById('go-button');
 
 let myChart;
 
@@ -40,7 +40,7 @@ if (indexPageIdentifier) {
         const selectedPayPeriod = this.value;
         updateModalTitles(selectedPayPeriod);
     });
-};
+}
 
 /**
  * Update modal titles based on pay period selected
