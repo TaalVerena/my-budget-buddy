@@ -199,6 +199,7 @@ My Budget Buddy is a user-friendly platform for managing and analyzing your fina
 
 ## Testing
 
+### Index Page
 | Test | Action | Expectation | Result |
 | :---: | :---: | :---: | :---: |
 | index.html header logo | Click on logo | User is taken to the home page (index.html) | Pass |
@@ -244,6 +245,21 @@ My Budget Buddy is a user-friendly platform for managing and analyzing your fina
 | index.html modals responsive design 1024px | Check to confirm the layout is responsive and all content is clearly displayed | Layout is responsive and all content is clearly displayed | Pass |
 | index.html modals responsive design 1440px | Check to confirm the layout is responsive and all content is clearly displayed | Layout is responsive and all content is clearly displayed | Pass |
 
+### About & Contact Page
+| Test | Action | Expectation | Result |
+| :---: | :---: | :---: | :---: |
+| about-and-contact.html header logo | Click on logo | User is taken back to the home page (index.html) | Pass |
+| about-and-contact.html header About & Contact button | Click on About & Contact button | User is taken to the About & Contact page (about-and-contact.html) | Pass |
+| about-and-contact.html footer social media icons | Click on social media icons | User is taken to the social media page that opens in a new tab | Pass |
+| about-and-contact.html contact form inputs | Click on contact form inputs | User is able to input their name, email, contact number and query | Pass |
+| about-and-contact.html contact form inputs | Correct input types are set for each input field | User is prompted to enter the correct input type if incorrect | Pass |
+| about-and-contact.html contact form submit button | Click on submit button | User is prompted to fill in the required fields if not filled in | Pass |
+| about-and-contact.html contact form submit button | Click on submit button | User is taken to the thank you page (thank-you.html) | Pass |
+| about-and-contact.html responsive design 320px | Check to confirm the layout is responsive and all content is clearly displayed | Layout is responsive and all content is clearly displayed | Pass |
+| about-and-contact.html responsive design 425px | Check to confirm the layout is responsive and all content is clearly displayed | Layout is responsive and all content is clearly displayed | Pass |
+| about-and-contact.html responsive design 768px | Check to confirm the layout is responsive and all content is clearly displayed | Layout is responsive and all content is clearly displayed | Pass |
+| about-and-contact.html responsive design 1024px | Check to confirm the layout is responsive and all content is clearly displayed | Layout is responsive and all content is clearly displayed | Pass |
+| about-and-contact.html responsive design 1440px | Check to confirm the layout is responsive and all content is clearly displayed | Layout is responsive and all content is clearly displayed | Pass |
 
 
 ### Lighthouse
