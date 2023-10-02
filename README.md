@@ -1,6 +1,7 @@
 # My Budget Buddy
+![Am I Responsive](README-media/am-i-responsive.png)
 ## Introduction
-
+Welcome to My Budget Buddy, a website designed to make budgeting a breeze. Our website is here to make the user feel right at home with calming colors, a minimal layout and easy to follow steps.
 ### Live Website
 The live My Budget Buddy website can be found [here](https://taalverena.github.io/my-budget-buddy/).
 ## Table of Contents
@@ -12,8 +13,13 @@ The live My Budget Buddy website can be found [here](https://taalverena.github.i
 ### User Stories
 | User Want or Need | How It Is Achieved | Achieved |
 | :---------------: | :----------------: | :------: |
-| User Want or Need | How It Is Achieved | Achieved |
-| User Want or Need | How It Is Achieved | Achieved |
+| Easily see what the website is for and how to use it | An About & Contact page has been set up with information about the website and steps on how to use the website | Yes |
+| Navigate the website with ease | Buttons are set up throughout the page (in the header, footer and throughout the different sections) | Yes |
+| Easily input income, budget & expenses | Modals created with clearly labelled inputs for different categories | Yes |
+| Quick access to my results | Results shown once the 3 sections are filled in | Yes |
+| Results breakdown | Results broken down into total, per category and shown in a bar graph | Yes |
+| Get in contact with the My Budget Buddy team | A contact form has been provided along with a thank you page as confirmation after the form is submitted | Yes |
+
 
 ## Site Overview
 
