@@ -61,6 +61,9 @@ The live My Budget Buddy website can be found [here](https://taalverena.github.i
 ## User Experience
 
 ### Who My Budget Buddy Caters For
+- My Budget Buddy caters for anyone who wants to manage their budget and gain valuable insights into their financial health.
+- Whether you are a student, a young professional or a family, My Budget Buddy is here to help you manage your budget and stay on track.
+- My Budget Buddy is designed to be user-friendly and easy to navigate, making it easy for anyone to use.
 
 ### User Stories
 | User Want or Need | How It Is Achieved | Achieved |
