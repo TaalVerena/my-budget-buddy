@@ -35,7 +35,7 @@
       font-family: 'Cardo', serif;
   }
 
-  button {
+  button, #results-home-button, #thank-you-home-button {
       font-size: 25px;
       padding: 10px 0;
       margin: 2.5px 2.5px 15px 2.5px;
@@ -44,9 +44,10 @@
       border-radius: 20px;
       width: 135px;
       transition: font-weight 0.3s ease;
+      text-align: center;
   }
 
-  button:hover {
+  button:hover, #results-home-button:hover, #thank-you-home-button:hover {
       font-weight: bold;
   }
 

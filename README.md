@@ -286,6 +286,9 @@ My Budget Buddy is a user-friendly platform for managing and analyzing your fina
 
 ### Validator Testing
 - HTML
+    - No errors were returned for index.html when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Ftaalverena.github.io%2Fmy-budget-buddy%2F)
+    - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Ftaalverena.github.io%2Fmy-budget-buddy%2Fabout-and-contact.html)
+    - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Ftaalverena.github.io%2Fmy-budget-buddy%2Fthank-you.html)
 - CSS
 - JavaScript
 
