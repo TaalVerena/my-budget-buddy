@@ -84,17 +84,22 @@
 
 #### Navigation Bar / Header
 - On mobiles the navigation bar consists of the My Budget Buddy logo and Contact Us button. The logo takes the user to the home page and the Contact Us button takes the user to the contact form.
+  
+    ![Header Mobile](README-media/header-mobile.png)
 - On larger devices, the layout changes to shift the header information to the footer to make the main content stand out more.
+
 
 #### Landing Page
 - The landing page offers a minimalistic layout including the header, cover text title, short description, "Let's Go" button and the footer.
 - The user is presented with instant feedback as to what the My Budget Buddy website is for, whilst keeping the layout minimal, giving a feel of ease.
 - By clicking the "Let's Go" button, the user is presented with the first section of the My Budget Buddy modal.
 
+    ![Landing Page Mobile](README-media/landing-mobile.png)
 #### Footer
 - On mobiles the footer contains the social media links which open in separate tabs and include aria labels for accessibility.
 - On larger devices the footer includes the social media links as well as the logo and Contact Us button to put the main content as the focus. The logo takes the user to the home page and the Contact Us button takes the user to the contact form.
 
+    ![Footer Mobile](README-media/footer-mobile.png)
 #### Income & Budget Modal
 - On mobiles the user is presented with the my income modal where they select their pay period and currency from dropdowns and fill in their income. By scrolling down, the user is then presented with the budget modal where they fill in their budget for different categories.
 - On larger devices, the layout is changed to present the user with the income modal and budget modal next to each other.
@@ -102,9 +107,13 @@
 - After the user has selected the currency, the currency will appear next to the input fields as confirmation.
 - When the "Next" button is clicked, a calculation is done to check if the budget is less than or equal to the income. If it is, the user is taken to the next modal. If the budget is more than the income, the user is presented with an alert to re-visit their budget.
 
+    ![Income Modal Section Mobile](README-media/income-modal-section-mobile.png)
+
+    ![Budget Modal Section Mobile](README-media/budget-modal-section-mobile.png)
 #### Spends Modal
 - The spends modal has the same information as the budget modal and once the "Next" button is clicked, the user is taken to the results modal.
 
+    ![Spends Modal Mobile](README-media/spends-modal-mobile.png)
 #### Results Modal
 - On mobiles the user is first provided with a breakdown of their results per category. After scrolling, the user is also provided with a pie chart as an overall result.
 - On larger devices, the user is provided with the breakdown as well as the pie chart next to each other.
@@ -114,6 +123,11 @@
   - On track values are presented in lavendar.
 - A "Home" button is provided at the end of the modal as confirmation to the user that the budget is complete.
 
+    ![Results Modal Totals Mobile](README-media/results-modal-totals-mobile.png)
+    
+    ![Results Modal Categories Mobile](README-media/results-modal-categories-mobile.png)
+    
+    ![Results Modal Graph Mobile](README-media/results-modal-graph-mobile.png)
 #### Contact Form
 - The contact form layout is the same on mobiles as well as desktops.
 - The user fills in their name, email, contact number and query. Each input field checks to confirm that the correct type of information has been inputted.
