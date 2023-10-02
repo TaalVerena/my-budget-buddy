@@ -305,8 +305,11 @@ My Budget Buddy is a user-friendly platform for managing and analyzing your fina
 ### Bugs
 
 #### Fixed Bugs
+- The income total was not adding up correctly when going back and changing the income or budget inputs. This was fixed by adding a function that resets the results when the user clicks the "Back" button.
+- The graph was not updating correctly when going back and changing the income or budget inputs. This was fixed by adding a chart.destroy() function to before the chart is created.
 
 #### Unfixed Bugs
+- There are no unfixed bugs.
 
 ## Deployment
 
