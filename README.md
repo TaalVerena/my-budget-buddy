@@ -5,6 +5,58 @@ Welcome to My Budget Buddy, a website designed to make budgeting a breeze. Our w
 ### Live Website
 The live My Budget Buddy website can be found [here](https://taalverena.github.io/my-budget-buddy/).
 ## Table of Contents
+- [My Budget Buddy](#my-budget-buddy)
+  - [Introduction](#introduction)
+    - [Live Website](#live-website)
+  - [Table of Contents](#table-of-contents)
+  - [User Experience](#user-experience)
+    - [Who My Budget Buddy Caters For](#who-my-budget-buddy-caters-for)
+    - [User Stories](#user-stories)
+  - [Site Overview](#site-overview)
+  - [Planning](#planning)
+    - [Figma Wireframes](#figma-wireframes)
+      - [Landing Page](#landing-page)
+      - [Income \& Budget Modal](#income--budget-modal)
+      - [Spends Modal](#spends-modal)
+      - [Results Modal](#results-modal)
+      - [Contact Form](#contact-form)
+      - [Thank You Page](#thank-you-page)
+    - [Color Scheme](#color-scheme)
+  - [Features](#features)
+    - [Existing Features](#existing-features)
+      - [Navigation Bar / Header](#navigation-bar--header)
+      - [Landing Page](#landing-page-1)
+      - [Footer](#footer)
+      - [Income \& Budget Modal](#income--budget-modal-1)
+      - [Spends Modal](#spends-modal-1)
+      - [Results Modal](#results-modal-1)
+      - [About \& Contact Page](#about--contact-page)
+        - [About Us](#about-us)
+        - [How It Works](#how-it-works)
+        - [Contact Us](#contact-us)
+      - [Thank You Page](#thank-you-page-1)
+      - [Favicon](#favicon)
+    - [Future Features to Implement](#future-features-to-implement)
+  - [Testing](#testing)
+    - [Index Page](#index-page)
+    - [About \& Contact Page](#about--contact-page-1)
+    - [Thank You Page](#thank-you-page-2)
+    - [Lighthouse](#lighthouse)
+    - [Validator Testing](#validator-testing)
+    - [WAVE](#wave)
+    - [Bugs](#bugs)
+      - [Fixed Bugs](#fixed-bugs)
+      - [Unfixed Bugs](#unfixed-bugs)
+  - [Deployment](#deployment)
+    - [***GitHub Pages***](#github-pages)
+    - [***Forking the GitHub Repository***](#forking-the-github-repository)
+    - [***Making a Local Clone***](#making-a-local-clone)
+  - [Credits](#credits)
+    - [Content](#content)
+    - [Media](#media)
+    - [Color Scheme, Fonts \& Icons](#color-scheme-fonts--icons)
+    - [Extensions](#extensions)
+    - [Other](#other)
 
 ## User Experience
 
@@ -76,13 +128,7 @@ My Budget Buddy is a user-friendly platform for managing and analyzing your fina
 - On Larger Devices:
 
     ![Thank You Page Wireframe Desktop](README-media/wireframe-thank-you-desktop.png)
-#### 404 Page
-- On Mobiles:
 
-    ![404 Wireframe Mobile](README-media/wireframe-404-mobile.png)
-- On Larger Devices:
-
-    ![404 Wireframe Desktop](README-media/wireframe-404-desktop.png)
 ### Color Scheme
 
 ## Features
