@@ -1,9 +1,11 @@
 # My Budget Buddy
-![Am I Responsive](README-media/am-i-responsive.png)
+
 ## Introduction
 Welcome to My Budget Buddy, a website designed to make budgeting a breeze. Our website is here to make the user feel right at home with calming colors, a minimal layout and easy to follow steps.
 ### Live Website
 The live My Budget Buddy website can be found [here](https://taalverena.github.io/my-budget-buddy/).
+
+![Am I Responsive](README-media/am-i-responsive.png)
 ## Table of Contents
 - [My Budget Buddy](#my-budget-buddy)
   - [Introduction](#introduction)
@@ -70,7 +72,7 @@ The live My Budget Buddy website can be found [here](https://taalverena.github.i
 ### User Stories
 | User Want or Need | How It Is Achieved | Achieved |
 | :---------------: | :----------------: | :------: |
-| Easily see what the website is for and how to use it | An About & Contact page has been set up with information about the website and steps on how to use the website | Yes |
+| Easily see what the website is for and how to use it | An About & Contact page provides information about My Budget Buddy and steps on how to use the website | Yes |
 | Navigate the website with ease | Buttons are set up throughout the page (in the header, footer and throughout the different sections) | Yes |
 | Easily input income, budget & expenses | Modals created with clearly labelled inputs for different categories | Yes |
 | Quick access to my results | Results shown once the 3 sections are filled in | Yes |
@@ -142,13 +144,13 @@ My Budget Buddy is a user-friendly platform for managing and analyzing your fina
 - The color scheme is as follows:
   
 ![](https://placehold.it/150x40/30725f/0000?text=30725f)
-- A dark green color is used for the header and footer.
+- A dark green is used for the header and footer.
 
 ![](https://placehold.it/150x40/96D9C6/0000?text=96D9C6)
 - A gradient of white to light green is used for the body.
 
 ![](https://placehold.it/150x40/F2D5D5/0000?text=F2D5D5)
-- A light pink color is used for the buttons and heading text shadow.
+- A light pink is used for the buttons and heading text shadow.
 
 ![](https://placehold.it/150x40/B0F8E3/0000?text=B0F8E3)
 ![](https://placehold.it/150x40/5EAB95/0000?text=5EAB95)
@@ -159,11 +161,10 @@ My Budget Buddy is a user-friendly platform for managing and analyzing your fina
 - A light purple is used for the budget modal section, results modal, contact form and thank you page with a darker purple border.
 
 #### Font
-- The default font used is Montserrat with Sans Serif as the fallback font.
-- Montserrat is a clean, minimal font that is easy to read.
+- The default font used is Montserrat which is a clean, minimal font that is easy to read.
 - Cardo is used for the h1 and modal headings to provide a contrast to the Montserrat font.
 - Sans Serif is used as the fallback font in case for any reason the font is not imported into the site correctly.
-- The font color used throughout the website is a grey color to provide contrast to the background and to be easy on the eye.
+- The font color used throughout the website is a grey color with white used in the header and footer to provide contrast to the background and to be easy on the eye.
   
 ![](https://placehold.it/150x40/6A6A6A/0000?text=6A6A6A)
 
@@ -172,17 +173,19 @@ My Budget Buddy is a user-friendly platform for managing and analyzing your fina
 ### Existing Features
 
 #### Navigation Bar / Header
-- On mobiles the navigation bar consists of the logo and About & Contact button. The logo takes the user to the home page and the About & Contact button takes the user to the contact form.
+- On mobiles the navigation bar consists of the logo and About & Contact link. The logo takes the user to the home page and the About & Contact button takes the user to the contact form.
   
     ![Header Mobile](README-media/header-mobile.png)
-- On larger devices, the layout changes expand the About & Contact link to balance out the header.
+- On larger devices, the the About & Contact link adjusts to balance out the header.
     ![Header Desktop](README-media/header-desktop.png)
+- The change from the Wireframe is that the information is split into the header and footer instead of having all of the icons and links in the footer. This was done to provide a better user experience and to make the website easier to navigate.
 
 #### Landing Page
 - The landing page offers a minimalistic layout including the header, cover text title, short description, "Let's Go" button and the footer.
-- The user is presented with instant feedback as to what the My Budget Buddy website is for, whilst keeping the layout minimal, giving a feel of ease.
+- The user is presented with instant feedback as to what the My Budget Buddy website is for, whilst keeping the layout minimal.
 - By clicking the "Let's Go" button, the user is presented with the first section of the income and budget modal.
 - The layout is the same on mobiles and larger devices, with the content adjusting slightly to cater for the device in use.
+- The change from the Wireframe includes the dark green header and footer instead of white to provide more of a contrast. The cover text title has also been changed to a more subtle light pink shadow to distinguish it from the modal titles.
 
     ![Landing Page Mobile](README-media/landing-mobile.png)
 
@@ -206,9 +209,10 @@ My Budget Buddy is a user-friendly platform for managing and analyzing your fina
     ![Income Budget Modal Desktop](README-media/income-budget-modal-desktop.png)
 
 - After the user has selected the pay period, the selection will appear in the heading throughout all modals as confirmation.
-- After the user has selected the currency, the currency will appear next to the input fields throughout all modals as confirmation.
-- When the "Next" button is clicked, a calculation is done to check if the budget is less than or equal to the income. If it is, the user is taken to the next modal. If the budget is more than the income, the user is presented with an alert to re-visit their budget.
+- Similarly, after the user has selected the currency, this will appear next to the input fields throughout all modals.
+- When the "Next" button is clicked, a calculation is done to confirm if the budget is less than or equal to the income. If it is, the user is taken to the next modal. If the budget is more than the income, the user is presented with an alert to re-visit their budget.
 - If the user clicks the "Back" button, they are taken back to the home page.
+- The changes from the Wireframe include white input fields instead of grey to provide better contrast. The savings input has been removed from the budget modal section and spends section, adding it to the results modal instead.
 
 #### Spends Modal
 - The spends modal has the same information as the budget modal for ease of use and once the "Next" button is clicked, the user is taken to the results modal.
@@ -235,21 +239,22 @@ My Budget Buddy is a user-friendly platform for managing and analyzing your fina
 - The individual categories take the budget and spends values to calculate if the user is over budget, under budget or on track:
   - Over budget values are presented in red.
   - Under budget values are presented in green.
-  - On track values are presented in lavendar.
-- The graph shows the user their expenses as a percentage of their income. The graph is presented in a bar graph to make it easy to read and understand.
+  - On track values are presented in purple.
+- The graph shows the user their expenses as a percentage of their income.
 - A "Home" button is provided at the end of the modal as confirmation to the user that the budget is complete. When clicked, the user is taken to the home page.
+- The change from the Wireframe is the use of a bar graph instead of a pie chart. This change was made to provide a better user experience and to provide a clearer visual representation of the user's expenses.
 
 #### About & Contact Page
 - The About & Contact Page consists of an About Us section, How It Works section and Contact Us form.
-- The layout is the same on mobiles and desktops with margin and padding adjusted depending on the device size.
+- The layout is the same on mobiles and desktops with margin and padding adjusting depending on the device size.
 ##### About Us
-- This section gives the user information about what My Budget Buddy is for and confirms that it manages income, expense and budget goals.
+- This section was not in the original Wireframe, but was added to give the user information about what My Budget Buddy is for and confirms that it manages income, expenses and budget goals.
 
     ![About & Contact Landing Mobile](README-media/about-and-contact-landing-mobile.png)
 
     ![About & Contact Landing Desktop](README-media/about-and-contact-landing-desktop.png)
 ##### How It Works
-- This section explains how the website works, how to navigate each modal and what My Budget Buddy can do for the user.
+- This section was added after the WIreframe design and explains how the website works, how to navigate each modal and what My Budget Buddy can do for the user.
 
     ![How It Works Mobile](README-media/how-it-works-mobile.png)
 
@@ -258,6 +263,7 @@ My Budget Buddy is a user-friendly platform for managing and analyzing your fina
 - This section enables to user to contact the My Budget Buddy team through the use of a quick, minimal contact form.
 - The user fills in their name, email, contact number and query. Each input field checks to confirm that the correct type of information has been inputted.
 - A "Submit" button is visible at the bottom of the contact form and when clicked, the user is taken to the "Thank you Page".
+- The input fields are white instead of grey to match the layout of the modals.
 
     ![Contact Form Mobile](README-media/contact-form-mobile.png)
     ![Contact Form Desktop](README-media/contact-form-desktop.png)
@@ -272,12 +278,11 @@ My Budget Buddy is a user-friendly platform for managing and analyzing your fina
 
 #### Favicon
 - A minimal favicon has been utilized to correspond with the website layout.
-- This provides ease of use to the user to find the website among any other tabs they may have open.
+- This enables the user to easily find the website among any other tabs they may have open.
 
     ![Favicon](README-media/favicon.png)
 ### Future Features to Implement
 - A 404 page to give the user feedback if they have navigated to a page that does not exist.
-- A "Reset" button on the results modal to allow the user to start again.
 
 ## Testing
 
