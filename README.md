@@ -21,7 +21,9 @@ The live My Budget Buddy website can be found [here](https://taalverena.github.i
       - [Results Modal](#results-modal)
       - [Contact Form](#contact-form)
       - [Thank You Page](#thank-you-page)
-    - [Color Scheme](#color-scheme)
+    - [Color Scheme \& Font](#color-scheme--font)
+      - [Color Scheme](#color-scheme)
+      - [Font](#font)
   - [Features](#features)
     - [Existing Features](#existing-features)
       - [Navigation Bar / Header](#navigation-bar--header)
@@ -132,13 +134,38 @@ My Budget Buddy is a user-friendly platform for managing and analyzing your fina
 
     ![Thank You Page Wireframe Desktop](README-media/wireframe-thank-you-desktop.png)
 
-### Color Scheme
+### Color Scheme & Font
+
+#### Color Scheme
 - The color scheme was chosen to be minimalistic and calming to the user.
-- The colors are easy on the eye and provide a sense of ease.
-- The colors are also used to provide feedback to the user on their budget status (over budget, under budget or on track).
+- The colors chosen are easy on the eye and are used throughout the website to provide consistency.
 - The color scheme is as follows:
--   Red
-              -   ![](https://placehold.it/150x40/d62424/FFFFFF?text=000000) was used for the buttons and the logo.
+  
+![](https://placehold.it/150x40/30725f/0000?text=30725f)
+- A dark green color is used for the header and footer.
+
+![](https://placehold.it/150x40/96D9C6/0000?text=96D9C6)
+- A gradient of white to light green is used for the body.
+
+![](https://placehold.it/150x40/F2D5D5/0000?text=F2D5D5)
+- A light pink color is used for the buttons and heading text shadow.
+
+![](https://placehold.it/150x40/B0F8E3/0000?text=B0F8E3)
+![](https://placehold.it/150x40/5EAB95/0000?text=5EAB95)
+- A light green is used for the income modal section and spends modal with a darker green border.
+
+![](https://placehold.it/150x40/E6E6FA/0000?text=E6E6FA)
+![](https://placehold.it/150x40/A6A6F9/0000?text=A6A6F9)
+- A light purple is used for the budget modal section, results modal, contact form and thank you page with a darker purple border.
+
+#### Font
+- The default font used is Montserrat with Sans Serif as the fallback font.
+- Montserrat is a clean, minimal font that is easy to read.
+- Cardo is used for the h1 and modal headings to provide a contrast to the Montserrat font.
+- Sans Serif is used as the fallback font in case for any reason the font is not imported into the site correctly.
+- The font color used throughout the website is a grey color to provide contrast to the background and to be easy on the eye.
+  
+![](https://placehold.it/150x40/6A6A6A/0000?text=6A6A6A)
 
 ## Features
 
