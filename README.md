@@ -133,6 +133,12 @@ My Budget Buddy is a user-friendly platform for managing and analyzing your fina
     ![Thank You Page Wireframe Desktop](README-media/wireframe-thank-you-desktop.png)
 
 ### Color Scheme
+- The color scheme was chosen to be minimalistic and calming to the user.
+- The colors are easy on the eye and provide a sense of ease.
+- The colors are also used to provide feedback to the user on their budget status (over budget, under budget or on track).
+- The color scheme is as follows:
+-   Red
+              -   ![](https://placehold.it/150x40/d62424/FFFFFF?text=000000) was used for the buttons and the logo.
 
 ## Features
 
@@ -413,6 +419,7 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 ### Content
 - Wireframes designed using [Figma](https://www.figma.com/)
 
+
 ### Media
 
 ### Color Scheme, Fonts & Icons
@@ -425,3 +432,4 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 
 ### Other
 - [PiaNotes](https://github.com/AlexaH88/pianotes/blob/main/README.md) README deployment layout was used.
+- Code Institute Readme template was used as a template for this readme [Code Institute](https://github.com/Code-Institute-Org/ci-full-template)
